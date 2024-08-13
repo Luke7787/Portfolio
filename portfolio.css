@@ -2,8 +2,26 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #000000;
 }
 
-.hook {
+.container {
+    margin-top: 27vh;
     text-align: center;
+}
+
+.main-heading {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: white;
+    letter-spacing: 0.1em;
+    font-weight: 700; /* Makes the font bolder */
+}
+
+.subtext{
+    font-size: 1.5rem;
+    color: #8C8C8C;
+    letter-spacing: 0.05em;
+    font-weight: 400; /* Lighter weight for contrast */
 }
