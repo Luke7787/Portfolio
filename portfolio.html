@@ -8,16 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <img src="logo.jpg" alt="Logo Image" class="logo-image">
-        <div class="logo">LUKE ZHUANG</div>
-        <div class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>        
-    </header>
-
     <!-- Menu Window -->
     <div class="menu-window">
         <div class="menu-image">
@@ -31,6 +21,16 @@
         </div>
     </div>
 
+    <header class="site-header">
+        <img src="logo.jpg" alt="Logo Image" class="logo-image">
+        <div class="logo">LUKE ZHUANG</div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>        
+    </header>
+
     <div class="container">
         <!-- This is a dummy comment, I am still new to HTML lol -->
         <h1 class="main-heading">
@@ -39,15 +39,16 @@
         </h1>
         <!-- <h2>I'm here <br> to make an impact!</h2> commenting this out for now -->
     </div>
+
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const menuWindow = document.querySelector('.menu-window');
-        const siteHeader = document.querySelector('.site-header');
+        const logoElements = document.querySelectorAll('.logo, .logo-image');
     
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
             menuWindow.classList.toggle('open');
-            siteHeader.classList.toggle('hidden'); // Toggle header visibility
+            logoElements.forEach(el => el.classList.toggle('hidden')); // Hide the logo and logo image
         });
     </script>
 </body>

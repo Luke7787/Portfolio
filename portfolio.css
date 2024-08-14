@@ -71,6 +71,7 @@ body {
     cursor: pointer;
     margin-left: auto;
     margin-right: 4vw;
+    z-index: 1001; /* Ensures it stays on top */
 }
 
 .menu-toggle .bar {
@@ -149,7 +150,9 @@ body {
     color: #f0f0f0;
 }
 
-/* Hidden Class for Header */
+/* Hidden Class for Elements */
 .hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
 }
