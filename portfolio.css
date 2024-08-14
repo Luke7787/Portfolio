@@ -25,3 +25,31 @@ body {
     letter-spacing: 0.05em;
     font-weight: 400; /* Lighter weight for contrast */
 }
+
+.site-header {
+    position: fixed;
+    top:6vh; /* Adds some space above */
+    left: 4vw; /* Adds some space to the left */
+    background-color: #000000;
+    padding: 1.5vh 3vw; /* Scales padding */
+    box-sizing: border-box;
+    display: flex; /* Align items horizontally */
+    z-index: 1000; /* Ensures it stays on top */
+    border-radius: 0 1.5vw 1.5vw 0; /* Rounded corners for the tab effect */
+}
+
+.logo {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.logo-image {
+    width: 4rem; /* Adjust size based on preference */
+    height: 4rem;
+    margin-top: -1rem;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 1.5rem; /* Adds space between image and text */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
