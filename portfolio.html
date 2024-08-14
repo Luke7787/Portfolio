@@ -11,6 +11,11 @@
     <header class="site-header">
         <img src="logo.jpg" alt="Logo Image" class="logo-image">
         <div class="logo">LUKE ZHUANG</div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>        
     </header>
     <div class="container">
         <!-- This is a dummy comment, I am still new to HTML lol -->
@@ -20,5 +25,12 @@
         </h1>
         <!-- <h2>I'm here <br> to make an impact!</h2> commenting this out for now -->
     </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+    
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

@@ -30,6 +30,7 @@ body {
     position: fixed;
     top:6vh; /* Adds some space above */
     left: 4vw; /* Adds some space to the left */
+    right: 4vw;
     background-color: #000000;
     padding: 1.5vh 3vw; /* Scales padding */
     box-sizing: border-box;
@@ -52,4 +53,36 @@ body {
     border-radius: 50%; /* Makes the image circular */
     margin-right: 1.5rem; /* Adds space between image and text */
     object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+/* Style for the menu button */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 4vw; /* Align to the right with space */
+}
+
+.menu-toggle .bar {
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 0.125rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* When the menu is open, transform the bars into an X */
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(0.41rem, 0.47rem);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(0.41rem, -0.47rem);
 }
