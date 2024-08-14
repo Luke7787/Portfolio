@@ -1,44 +1,50 @@
+/* Body Styling */
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Poppins", Arial, sans-serif;
     background-color: #000000;
 }
 
+/* Container Styling */
 .container {
     margin-top: 27vh;
     text-align: center;
 }
 
+/* Main Heading Styling */
 .main-heading {
     font-size: 3.5rem;
     line-height: 1.3;
     color: white;
     letter-spacing: 0.1em;
-    font-weight: 700; /* Makes the font bolder */
+    font-weight: 700;
 }
 
+/* Subtext Styling */
 .subtext{
     font-size: 1.5rem;
     color: #8C8C8C;
     letter-spacing: 0.05em;
-    font-weight: 400; /* Lighter weight for contrast */
+    font-weight: 400;
 }
 
+/* Header Styling */
 .site-header {
     position: fixed;
-    top:6vh; /* Adds some space above */
-    left: 4vw; /* Adds some space to the left */
+    top: 6vh;
+    left: 4vw;
     right: 4vw;
     background-color: #000000;
-    padding: 1.5vh 3vw; /* Scales padding */
+    padding: 1.5vh 3vw;
     box-sizing: border-box;
-    display: flex; /* Align items horizontally */
-    z-index: 1000; /* Ensures it stays on top */
-    border-radius: 0 1.5vw 1.5vw 0; /* Rounded corners for the tab effect */
+    display: flex;
+    z-index: 1000;
+    border-radius: 0 1.5vw 1.5vw 0;
 }
 
+/* Logo Styling */
 .logo {
     color: white;
     font-size: 1.2rem;
@@ -47,15 +53,15 @@ body {
 }
 
 .logo-image {
-    width: 4rem; /* Adjust size based on preference */
+    width: 4rem;
     height: 4rem;
     margin-top: -1rem;
-    border-radius: 50%; /* Makes the image circular */
-    margin-right: 1.5rem; /* Adds space between image and text */
-    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    object-fit: cover;
 }
 
-/* Style for the menu button */
+/* Menu Toggle Button Styling */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -64,7 +70,7 @@ body {
     height: 1.5rem;
     cursor: pointer;
     margin-left: auto;
-    margin-right: 4vw; /* Align to the right with space */
+    margin-right: 4vw;
 }
 
 .menu-toggle .bar {
@@ -74,7 +80,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/* When the menu is open, transform the bars into an X */
+/* Menu Toggle Open State */
 .menu-toggle.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(0.41rem, 0.47rem);
 }
@@ -87,26 +93,28 @@ body {
     transform: rotate(-45deg) translate(0.41rem, -0.47rem);
 }
 
-/* Menu Window */
+/* Menu Window Styling */
 .menu-window {
     position: fixed;
     top: 0;
-    left: -100%; /* Initially hidden off-screen */
+    left: -100%;
     width: 100%;
     height: 100%;
     display: flex;
     transition: left 0.3s ease-in-out;
-    z-index: 999; /* Above everything */
+    z-index: 999;
 }
 
+/* Menu Window Open State */
 .menu-window.open {
-    left: 0; /* Slide in from the left */
+    left: 0;
 }
 
+/* Menu Image Styling */
 .menu-image {
     width: 50%;
     background-color: #333;
-    overflow: hidden; /* To ensure the image fits */
+    overflow: hidden;
 }
 
 .menu-image img {
@@ -115,6 +123,7 @@ body {
     object-fit: cover;
 }
 
+/* Menu Buttons Styling */
 .menu-buttons {
     width: 50%;
     display: flex;
@@ -138,4 +147,9 @@ body {
 
 .menu-link:hover {
     color: #f0f0f0;
+}
+
+/* Hidden Class for Header */
+.hidden {
+    display: none;
 }

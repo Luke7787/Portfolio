@@ -42,10 +42,12 @@
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const menuWindow = document.querySelector('.menu-window');
+        const siteHeader = document.querySelector('.site-header');
     
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
-            menuWindow.classList.toggle('open'); // Toggle the menu window
+            menuWindow.classList.toggle('open');
+            siteHeader.classList.toggle('hidden'); // Toggle header visibility
         });
     </script>
 </body>
