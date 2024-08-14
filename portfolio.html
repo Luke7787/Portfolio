@@ -17,6 +17,20 @@
             <div class="bar"></div>
         </div>        
     </header>
+
+    <!-- Menu Window -->
+    <div class="menu-window">
+        <div class="menu-image">
+            <img src="menu.jpg" alt="Menu Image">
+        </div>
+        <div class="menu-buttons">
+            <a href="#" class="menu-link">Luke Zhuang</a>
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">Resume & Skill</a>
+            <a href="#" class="menu-link">Portfolio</a>
+        </div>
+    </div>
+
     <div class="container">
         <!-- This is a dummy comment, I am still new to HTML lol -->
         <h1 class="main-heading">
@@ -27,9 +41,11 @@
     </div>
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
+        const menuWindow = document.querySelector('.menu-window');
     
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
+            menuWindow.classList.toggle('open'); // Toggle the menu window
         });
     </script>
 </body>
