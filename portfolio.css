@@ -30,7 +30,7 @@ body {
     font-weight: 400;
 }
 
-/* Header Styling */
+/* Header Styling with transition */
 .site-header {
     position: fixed;
     top: 6vh;
@@ -42,6 +42,13 @@ body {
     display: flex;
     z-index: 1000;
     border-radius: 0 1.5vw 1.5vw 0;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Transparent Header Styling */
+.header-transparent {
+    background-color: transparent;
+    box-shadow: none; /* Optional: remove shadow if any */
 }
 
 /* Logo Styling */

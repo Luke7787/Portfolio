@@ -44,11 +44,13 @@
         const menuToggle = document.querySelector('.menu-toggle');
         const menuWindow = document.querySelector('.menu-window');
         const logoElements = document.querySelectorAll('.logo, .logo-image');
+        const siteHeader = document.querySelector('.site-header');
     
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
             menuWindow.classList.toggle('open');
             logoElements.forEach(el => el.classList.toggle('hidden')); // Hide the logo and logo image
+            siteHeader.classList.toggle('header-transparent'); // Toggle transparent background
         });
     </script>
 </body>
