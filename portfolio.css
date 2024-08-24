@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Body Styling */
 body {
     display: flex;
@@ -36,6 +40,7 @@ body::before {
     color: white;
     letter-spacing: 0.1em;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Subtext Styling */
@@ -73,6 +78,7 @@ body::before {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.15em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .logo-image {
@@ -107,11 +113,11 @@ body::before {
 
 /* Hover Effect on Menu Toggle Button */
 .menu-toggle:hover .bar:nth-child(1) {
-    transform: translateY(-0.2rem); /* Move the first bar up */
+    transform: translateY(-0.1rem); /* Move the first bar up */
 }
 
 .menu-toggle:hover .bar:nth-child(3) {
-    transform: translateY(0.2rem); /* Move the third bar down */
+    transform: translateY(0.1rem); /* Move the third bar down */
 }
 
 
@@ -156,6 +162,10 @@ body::before {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.menu-toggle:hover .bar {
+    background-color: #1E90FF;
 }
 
 /* Menu Buttons Styling */
@@ -213,6 +223,7 @@ body::before {
 
 .menu-link:hover {
     color: #1E90FF; /* Blue color for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 /* Hidden Class for Elements */
