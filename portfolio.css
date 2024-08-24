@@ -79,6 +79,7 @@ body {
     margin-left: auto;
     margin-right: 4vw;
     z-index: 1001; /* Ensures it stays on top */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .menu-toggle .bar {
@@ -87,6 +88,16 @@ body {
     border-radius: 0.125rem;
     transition: all 0.3s ease-in-out;
 }
+
+/* Hover Effect on Menu Toggle Button */
+.menu-toggle:hover .bar:nth-child(1) {
+    transform: translateY(-0.2rem); /* Move the first bar up */
+}
+
+.menu-toggle:hover .bar:nth-child(3) {
+    transform: translateY(0.2rem); /* Move the third bar down */
+}
+
 
 /* Menu Toggle Open State */
 .menu-toggle.open .bar:nth-child(1) {
@@ -136,25 +147,56 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
     background-color: #000;
     padding: 2rem;
+    position: relative; /* Needed for the relative positioning of ::before elements */
 }
-
 .menu-link {
     color: white;
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-size: 2rem; /* Increased font size for larger text */
+    margin: 1.5rem 0; /* Increased margin for more spacing */
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.1em;
-    text-align: center;
+    text-align: center; /* Centers text */
     transition: color 0.3s;
+    position: relative; /* Establishes a positioning context for pseudo-element */
+    padding-left: 2.5rem; /* Adds space for the subscript number */
+}
+
+/* Pseudo-element for Subscript Numbers */
+.menu-link::before {
+    content: attr(data-number); /* Use the data-number attribute to set the number */
+    font-size: 1rem; /* Smaller font size for subscript */
+    font-weight: 400; /* Lighter weight for numbers */
+    color: #8C8C8C; /* Subtle color for subscript */
+    position: absolute;
+    left: -2rem; /* Adjusted position to the left of the text */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.menu-link::after {
+    content: ''; /* Empty content for the bar */
+    position: absolute;
+    left: -2rem; /* Align with subscript number */
+    top: 80%; /* Slightly below the subscript number */
+    width: 1.3rem; /* Width of the rectangle bar */
+    height: 0.1rem; /* Height of the rectangle bar */
+    background-color: #8C8C8C; /* Color of the rectangle bar */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* Hide Rectangle Bar for 'Luke Zhuang' Link */
+.no-bar::after {
+    display: none; /* Hide the rectangle bar */
 }
 
 .menu-link:hover {
-    color: #f0f0f0;
+    color: #1E90FF; /* Blue color for hover effect */
 }
 
 /* Hidden Class for Elements */
