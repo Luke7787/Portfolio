@@ -48,13 +48,18 @@ body {
     display: flex;
     z-index: 1000;
     border-radius: 0 1.5vw 1.5vw 0;
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+/* Add a class for hiding the header */
+.header-hidden {
+    top: -100px; /* Adjust based on header height */
 }
 
 /* Transparent Header Styling */
 .header-transparent {
     background-color: transparent;
-    box-shadow: none; /* Optional: remove shadow if any */
+    box-shadow: none;
 }
 
 /* Logo Styling */
@@ -86,8 +91,8 @@ body {
     cursor: pointer;
     margin-left: auto;
     margin-right: 4vw;
-    z-index: 1001; /* Ensures it stays on top */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    z-index: 1001; 
+    transition: all 0.3s ease-in-out; 
 }
 
 .menu-toggle .bar {
@@ -98,12 +103,14 @@ body {
 }
 
 /* Hover Effect on Menu Toggle Button */
+/* Move the first bar up */
 .menu-toggle:hover .bar:nth-child(1) {
-    transform: translateY(-0.1rem); /* Move the first bar up */
+    transform: translateY(-0.1rem); 
 }
 
+/* Move the third bar down */
 .menu-toggle:hover .bar:nth-child(3) {
-    transform: translateY(0.1rem); /* Move the third bar down */
+    transform: translateY(0.1rem); 
 }
 
 /* Menu Toggle Open State */
@@ -158,52 +165,52 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
+    justify-content: center;
+    align-items: center; 
     background-color: #141414;
     padding: 2rem;
-    position: relative; /* Needed for the relative positioning of ::before elements */
+    position: relative;
 }
 .menu-link {
     color: white;
-    font-size: 2rem; /* Increased font size for larger text */
-    margin: 1.5rem 0; /* Increased margin for more spacing */
+    font-size: 2rem; 
+    margin: 1.5rem 0; 
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.1em;
-    text-align: center; /* Centers text */
+    text-align: center; 
     transition: color 0.3s;
-    position: relative; /* Establishes a positioning context for pseudo-element */
-    padding-left: 2.5rem; /* Adds space for the subscript number */
+    position: relative;
+    padding-left: 2.5rem;
 }
 
 /* Pseudo-element for Subscript Numbers */
 .menu-link::before {
-    content: attr(data-number); /* Use the data-number attribute to set the number */
-    font-size: 1rem; /* Smaller font size for subscript */
-    font-weight: 400; /* Lighter weight for numbers */
-    color: #8C8C8C; /* Subtle color for subscript */
+    content: attr(data-number);
+    font-size: 1rem; 
+    font-weight: 400; 
+    color: #8C8C8C; 
     position: absolute;
-    left: -2rem; /* Adjusted position to the left of the text */
+    left: -2rem; 
     top: 50%;
-    transform: translateY(-50%); /* Center vertically */
+    transform: translateY(-50%); 
 }
 
 .menu-link::after {
-    content: ''; /* Empty content for the bar */
+    content: '';
     position: absolute;
-    left: -2rem; /* Align with subscript number */
-    top: 80%; /* Slightly below the subscript number */
-    width: 1.3rem; /* Width of the rectangle bar */
-    height: 0.1rem; /* Height of the rectangle bar */
-    background-color: #8C8C8C; /* Color of the rectangle bar */
-    transform: translateY(-50%); /* Center vertically */
+    left: -2rem;
+    top: 80%;
+    width: 1.3rem;
+    height: 0.1rem;
+    background-color: #8C8C8C;
+    transform: translateY(-50%);
 }
 
 /* Hide Rectangle Bar for 'Luke Zhuang' Link */
 .no-bar::after {
-    display: none; /* Hide the rectangle bar */
+    display: none;
 }
 
 .menu-link:hover {
@@ -218,6 +225,16 @@ body {
     transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
 }
 
+.About{
+    margin-top: 35rem;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 10rem;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    z-index: -1;
+    text-transform: uppercase;
+}
+
 @keyframes colorChange {
     0% { color: #ff6f61; }
     50% { color: #d500f9; }
@@ -226,13 +243,8 @@ body {
 
 /* Keyframes for typewriter effect */
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 98%;
-    }
-}
+    from { width: 0;}
+    to {width: 98%;}}
 
 /* Keyframes for blinking cursor effect */
 @keyframes blink {
@@ -254,11 +266,11 @@ body {
     }
     50% {
         transform: translateY(-50%);
-        clip-path: inset(0 0 50% 0); /* Clip the bottom half */
+        clip-path: inset(0 0 50% 0);
     }
     100% {
         transform: translateY(-100%);
-        clip-path: inset(0 0 100% 0); /* Completely clip the element */
+        clip-path: inset(0 0 100% 0);
     }
 }
 

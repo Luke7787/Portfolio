@@ -41,7 +41,11 @@
         <h2 >HERE TO MAKE AN IMPACT!</h2>
     </div>
 
-    <div class="About"> About Me </div>
+    <div class="About">ABOUT<br>
+        <span class="subtext">Hi! I'm Luke Zhuang</span>
+    
+    </div>
+
 
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
@@ -49,12 +53,40 @@
         const logoElements = document.querySelectorAll('.logo, .logo-image');
         const siteHeader = document.querySelector('.site-header');
     
+        // Toggle the menu open/close
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
             menuWindow.classList.toggle('open');
-            logoElements.forEach(el => el.classList.toggle('hidden')); // Hide the logo and logo image
-            siteHeader.classList.toggle('header-transparent'); // Toggle transparent background
+            logoElements.forEach(el => el.classList.toggle('hidden'));
+            siteHeader.classList.toggle('header-transparent');
         });
-    </script>
+    
+        let lastScrollY = window.scrollY;
+        let headerHidden = false;
+    
+        // Function to check if the header is out of view
+        const checkHeaderVisibility = () => {
+            const headerHeight = siteHeader.offsetHeight; // Get the header's height
+    
+            // Check if we've scrolled past the header's height
+            if (window.scrollY > headerHeight && !headerHidden) {
+                siteHeader.classList.add('hidden');
+                headerHidden = true;
+            } else if (window.scrollY <= headerHeight && headerHidden) {
+                siteHeader.classList.remove('hidden');
+                headerHidden = false;
+            }
+        };
+    
+        // Add scroll event listener to check header visibility on scroll
+        window.addEventListener('scroll', () => {
+            checkHeaderVisibility();
+            lastScrollY = window.scrollY;
+        });
+    
+        // Initial check in case the page loads scrolled down
+        checkHeaderVisibility();
+    </script>    
+    
 </body>
 </html>
