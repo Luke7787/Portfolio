@@ -248,13 +248,13 @@ body {
     color: white;
     letter-spacing: 0.05em;
     font-weight: 400;
-    margin-bottom: 9rem;
+    margin-bottom: 11.5rem;
     margin-left: 5.75rem;
     text-transform: none;
 }
 
 .about-description {
-    margin-top: -1.8rem; /* Space above the paragraph */
+    margin-top: -2.75rem; /* Space above the paragraph */
     font-size: 1.2rem; /* Adjust font size as needed */
     margin-left: 5.75rem; /* Align with other content */
     color: #8c8c8c;
@@ -265,6 +265,67 @@ body {
     line-height: 1.5; /* Improve readability by adjusting line height */
 
     padding-right: 2rem; /* Ensure text does not touch the edge of the container */
+}
+
+/* Resume Link Styling */
+.resume-link {
+    color: #1E90FF; /* Blue color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+    color: #4A90E2; /* Slightly lighter blue on hover */
+    text-decoration: underline;
+}
+
+/* Additional styling for the icons */
+.social-icons {
+    margin-top: 12px;
+    margin-left: 18rem;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Updated icon styling */
+.social-icons i {
+    font-size: 40px; /* Adjust icon size as needed */
+    color: #1E90FF;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Optional hover effect */
+.social-icons a:hover i {
+    color: white; /* Slightly darker blue on hover */
+}
+
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the background circular */
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.icon-container i {
+    font-size: 24px; /* Adjust icon size as needed */
+    color: #1B76D2; /* Icon color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.contact-text {
+    margin-top: 2rem;
+    text-align: center; /* Center the text horizontally */
+    font-size: 1.25rem; /* Adjust font size as needed */
+    color: white; /* Set text color */
+    margin-left: 16.25rem;
 }
 
 @keyframes colorChange {
