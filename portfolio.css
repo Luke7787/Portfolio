@@ -328,6 +328,21 @@ body {
     margin-left: 16.25rem;
 }
 
+.contact-info {
+    margin-left: 22rem;
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: 10px; /* Space between "Contact me here!" and the contact details */
+}
+
+.contact-label {
+    color: #8c8c8c; /* Color for "Email:" and "Phone:" */
+}
+
+.contact-detail {
+    color: #2f89fc; /* Color for email address and phone number */
+}
+
+
 @keyframes colorChange {
     0% { color: #ff6f61; }
     50% { color: #d500f9; }
