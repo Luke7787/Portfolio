@@ -228,7 +228,7 @@ body {
 .About{
     position: relative;
     margin-left: 32rem;
-    margin-top: 30rem;
+    margin-top: 12rem;
     color: rgba(255, 255, 255, 0.15);
     font-size: 11rem;
     font-family: "Poppins", Arial, sans-serif;
@@ -339,7 +339,13 @@ body {
 }
 
 .contact-detail {
-    color: #2f89fc; /* Color for email address and phone number */
+    color: #1E90FF; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 400; /* Optional: Adjust font weight */
+}
+
+.contact-detail:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 
