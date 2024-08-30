@@ -239,6 +239,25 @@ body {
     margin-bottom: 0.5rem; /* Reduced margin to bring text closer */
 }
 
+/* About Image Styling */
+.about-image {
+    width: 15rem; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2rem; /* Space between image and text */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    object-fit: cover; /* Ensure the image covers its container */
+}
+
+/* About Text Styling */
+.about-text {
+    position: relative;
+}
+
+.about-text .subtext2 {
+    margin-bottom: 11.5rem;
+    margin-left: 5.75rem;
+}
+
 /* Subtext Styling */
 .subtext2{
     bottom: 0; /* Adjust as needed */
@@ -263,7 +282,6 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional for a subtle shadow effect */
     text-transform: none;
     line-height: 1.5; /* Improve readability by adjusting line height */
-
     padding-right: 2rem; /* Ensure text does not touch the edge of the container */
 }
 
@@ -353,6 +371,20 @@ body {
 .contact-detail:hover {
     text-decoration: underline; /* Add underline on hover */
 }
+
+.about-image {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally and add margin */
+    max-width: 80%; /* Adjust width as needed */
+    max-height: 500px; /* Adjust height as needed */
+    width: auto; /* Allow width to adjust while maintaining aspect ratio */
+    height: auto; /* Allow height to adjust while maintaining aspect ratio */
+    /* Optional: Add a border or shadow for better visibility */
+    border: 2px solid #ddd; /* Light border color */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
 
 
 @keyframes colorChange {
