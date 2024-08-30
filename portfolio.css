@@ -215,7 +215,7 @@ body {
 
 .menu-link:hover {
     color: #1E90FF; /* Blue color for hover effect */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    transform: scale(1.025); /* Slightly enlarge the button on hover */
 }
 
 /* Hidden Class for Elements */
@@ -337,6 +337,7 @@ body {
     margin-left: 22rem;
     font-size: 18px; /* Adjust font size as needed */
     margin-top: 10px; /* Space between "Contact me here!" and the contact details */
+    padding-bottom: 10rem;
 }
 
 .contact-label {
