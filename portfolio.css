@@ -320,6 +320,11 @@ body {
     transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
+.icon-container:hover {
+    transform: scale(1.1); /* Scale up the icon on hover */
+    color: #1E90FF; /* Optional: Change icon color on hover */
+}
+
 .contact-text {
     margin-top: 2rem;
     text-align: center; /* Center the text horizontally */
