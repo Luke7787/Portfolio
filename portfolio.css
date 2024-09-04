@@ -376,7 +376,7 @@ body {
 .about-image {
     position: absolute;
     top: 16rem;
-    left: 0rem; /* Adjust the left position as needed */
+    left: -5rem; /* Adjust the left position as needed */
     display: block;
     margin: 0; /* Remove default margin since position is absolute */
     max-width: 50rem; /* Adjust width as needed */
