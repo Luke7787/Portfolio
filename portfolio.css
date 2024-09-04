@@ -15,6 +15,7 @@ body {
 .container {
     margin-top: 27vh;
     text-align: center;
+    position: relative;
 }
 
 /* Main Heading Styling */
@@ -373,13 +374,13 @@ body {
 }
 
 .about-image {
-    position: absolute; /* Position the image absolutely */
-    top: 110vh;
-    left: 13%; /* Adjust the left position as needed */
+    position: absolute;
+    top: 16rem;
+    left: 0rem; /* Adjust the left position as needed */
     display: block;
     margin: 0; /* Remove default margin since position is absolute */
-    max-width: 80%; /* Adjust width as needed */
-    max-height: 50vh; /* Adjust height as needed */
+    max-width: 50rem; /* Adjust width as needed */
+    max-height: 33rem; /* Adjust height as needed */
     width: auto; /* Allow width to adjust while maintaining aspect ratio */
     height: auto; /* Allow height to adjust while maintaining aspect ratio */
     border: 2px solid #ddd; /* Light border color */
