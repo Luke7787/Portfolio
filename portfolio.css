@@ -471,19 +471,25 @@ h2 {
 }
 
 .projects {
-    text-align: center;
-    padding: 30px; /* Slightly reduced padding */
-    background: linear-gradient(135deg, #6b7c93, #9bacc6);
-    border-radius: 12px; /* Slightly more rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow for elegance */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    align-items: center;     /* Horizontally centers the content */
+    text-align: center;      /* Centers text inside */
 }
 
 .project-heading {
-    font-size: 1.75em; /* Smaller, yet impactful size */
-    color: #fff; /* White text for contrast */
-    margin: 0;
-    font-family: 'Georgia', serif; /* Elegant serif font */
-    font-weight: 600; /* Medium bold for sophistication */
-    text-transform: uppercase; /* Formal and luxurious look */
-    letter-spacing: 2px; /* Increased letter spacing for a refined appearance */
+    font-size: 2.5rem;       /* Adjust as needed */
+    color: #ffffff;          /* Adjust text color */
+    margin: 0;               /* Remove any default margin */
+}
+
+.text2 {
+    margin-top: 8.5rem;
+    font-size: 1.5rem;      /* Adjust size for the subheader */
+    color: #8c8c8c;        /* Adjust subheader color */
+    font-weight: 400;
+    margin-bottom: 0.7rem;    /* Space between subheader and main heading */
+    letter-spacing: 2px;    /* Adds spacing between letters */
+    text-transform: uppercase; /* Makes the subheader uppercase */
 }
