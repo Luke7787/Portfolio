@@ -459,7 +459,8 @@ h2 {
     overflow: hidden; /* Ensures the text stays within the element */
     white-space: nowrap; /* Prevents text from wrapping */
     border-right: 2px solid #ffffff; /* Creates a cursor effect */
-    animation: typewriter 3s steps(40, end) forwards, 
+    animation: doNothing 3s,
+               typewriter 3s steps(40, end) forwards, 
                blink 0.75s step-end infinite, 
                colorChange 5s linear infinite, 
                cutInHalf 1s 5s forwards; /* Fade-out effect */
@@ -467,4 +468,22 @@ h2 {
     color: #ffffff;
     display: inline-block; /* Keeps the h2 element from stretching to full width */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add depth with shadow */
+}
+
+.projects {
+    text-align: center;
+    padding: 30px; /* Slightly reduced padding */
+    background: linear-gradient(135deg, #6b7c93, #9bacc6);
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow for elegance */
+}
+
+.project-heading {
+    font-size: 1.75em; /* Smaller, yet impactful size */
+    color: #fff; /* White text for contrast */
+    margin: 0;
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-weight: 600; /* Medium bold for sophistication */
+    text-transform: uppercase; /* Formal and luxurious look */
+    letter-spacing: 2px; /* Increased letter spacing for a refined appearance */
 }
