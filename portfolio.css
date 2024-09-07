@@ -545,15 +545,22 @@ h2 {
     overflow: hidden; /* Ensures the text stays within the element */
     white-space: nowrap; /* Prevents text from wrapping */
     border-right: 2px solid #ffffff; /* Creates a cursor effect */
-    animation: doNothing 3s,
-            typewriter 3s steps(40, end) forwards 4s, /* Delay added here */
-            blink 0.75s step-end infinite 4s, /* Delay added here */
-            colorChange 5s linear infinite 4s, /* Delay added here */
-            cutInHalf 1s 9s forwards; /* Delay added here */
+    opacity: 0; /* Initially hidden */
+    animation:
+            fadeIn 0s 2s forwards,
+            typewriter 3s steps(40, end) forwards 2s, /* Delay added here */
+            blink 0.75s step-end infinite 2s, /* Delay added here */
+            colorChange 5s linear infinite 2s, /* Delay added here */
+            cutInHalf 1s 7s forwards; /* Delay added here */
     font-size: 2rem;
     color: #ffffff;
     display: inline-block; /* Keeps the h2 element from stretching to full width */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add depth with shadow */
+}
+
+/* Keyframes to fade in the text after the delay */
+@keyframes fadeIn {
+    to { opacity: 1; } /* Makes the text visible */
 }
 
 .projects {
