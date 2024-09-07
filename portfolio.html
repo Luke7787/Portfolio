@@ -150,40 +150,42 @@
         updateProgressBar(); // Ensure the progress bar is updated on page load
 
         const letters = "ゲネバコンヰゾケウユハポフチヘツムカザルマボレピスルベトペアドプヤブヲンタシデラソミネブニヌレクサゲガバーネゼ";
-        const subtext = document.getElementById("subtext");
-        const finalText = subtext.textContent;
-        let iteration = 0;
+const subtext = document.getElementById("subtext");
+const finalText = subtext.textContent;
+let iteration = 0;
 
-        function scrambleText() {
-            const duration = 1750; // Total duration of the scramble effect in milliseconds
-            const startTime = Date.now(); // Record the start time
+function scrambleText() {
+    const duration = 1750; // Total duration of the scramble effect in milliseconds
+    const startTime = Date.now(); // Record the start time
 
-            const scrambleInterval = setInterval(() => {
-                const elapsedTime = Date.now() - startTime; // Time elapsed since the start
-                iteration = Math.min(finalText.length, Math.floor((elapsedTime / duration) * finalText.length));
+    const scrambleInterval = setInterval(() => {
+        const elapsedTime = Date.now() - startTime; // Time elapsed since the start
+        iteration = Math.min(finalText.length, Math.floor((elapsedTime / duration) * finalText.length));
 
-                subtext.textContent = finalText.split("").map((char, i) => {
-                    if (i < iteration) {
-                        return finalText[i]; // Show correct letters once they've scrambled enough
-                    }
-                    return letters[Math.floor(Math.random() * letters.length)]; // Random character
-                }).join("");
+        subtext.textContent = finalText.split("").map((char, i) => {
+            if (i < iteration) {
+                return finalText[i]; // Show correct letters once they've scrambled enough
+            }
+            return letters[Math.floor(Math.random() * letters.length)]; // Random character
+        }).join("");
 
-                // Stop when the full text is revealed
-                if (iteration >= finalText.length) {
-                    clearInterval(scrambleInterval);
-                }
-            }, 40); // Interval time to control the smoothness of the effect
+        // Stop when the full text is revealed
+        if (iteration >= finalText.length) {
+            clearInterval(scrambleInterval);
         }
+    }, 55); // Interval time to control the smoothness of the effect
+}
 
-        // Initially hide the text
-        subtext.style.opacity = '0';
+// Initially hide the text completely
+subtext.style.visibility = 'hidden';
 
-        // Show the text after a 0.5-second delay and start the scramble effect
-        setTimeout(() => {
-            subtext.style.opacity = '1'; // Make the text visible
-            scrambleText(); // Start the scramble effect
-        }, 650); // 0.5 seconds delay
+// Show the text after a 0.5-second delay and start the scramble effect
+setTimeout(() => {
+    subtext.style.visibility = 'visible'; // Make the text visible
+    subtext.style.opacity = '1'; // Transition to full opacity
+    scrambleText(); // Start the scramble effect
+}, 0); // 0.5 seconds delay
+
     </script>    
     
 </body>
