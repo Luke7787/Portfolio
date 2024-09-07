@@ -546,10 +546,10 @@ h2 {
     white-space: nowrap; /* Prevents text from wrapping */
     border-right: 2px solid #ffffff; /* Creates a cursor effect */
     animation: doNothing 3s,
-               typewriter 3s steps(40, end) forwards, 
-               blink 0.75s step-end infinite, 
-               colorChange 5s linear infinite, 
-               cutInHalf 1s 5s forwards; /* Fade-out effect */
+            typewriter 3s steps(40, end) forwards 4s, /* Delay added here */
+            blink 0.75s step-end infinite 4s, /* Delay added here */
+            colorChange 5s linear infinite 4s, /* Delay added here */
+            cutInHalf 1s 9s forwards; /* Delay added here */
     font-size: 2rem;
     color: #ffffff;
     display: inline-block; /* Keeps the h2 element from stretching to full width */
