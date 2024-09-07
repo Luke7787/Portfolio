@@ -504,7 +504,7 @@ body {
 @keyframes colorChange {
     0% { color: #1E90FF; } /* Dodger Blue */
     50% { color: #d500f9; } /* Electric Purple */
-    100% { color: #4A90E2; } /* Darker Blue */
+    100% { color: #1E90FF; } /* Dodger Blue */
 }
 
 /* Keyframes for typewriter effect */
