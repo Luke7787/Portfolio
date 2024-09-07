@@ -110,10 +110,17 @@ body {
     0% {
         width: 100%;
         left: 0;
+        opacity: 1;
+    }
+    99% {
+        width: 0%;
+        left: 100%; /* Moves the left side to the right end */
+        opacity: 1; /* Remain fully visible until the very end */
     }
     100% {
         width: 0%;
-        left: 100%; /* Moves the left side to the right end */
+        left: 100%;
+        opacity: 0; /* Fully transparent at the very end */
     }
 }
 
