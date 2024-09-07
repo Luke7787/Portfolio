@@ -44,7 +44,7 @@
     <div class="container">
         <!-- This is a dummy comment, I am still new to HTML lol -->
         <h1 class="main-heading">
-            <span class="subtext">HELLO! MY NAME IS</span><br>
+            <span class="subtext" id="subtext">HELLO! MY NAME IS</span><br>
             LUKE ZHUANG
         </h1>
         <h2 >HERE TO MAKE AN IMPACT!</h2>
@@ -148,6 +148,33 @@
         // Initial check in case the page loads scrolled down
         checkHeaderVisibility();
         updateProgressBar(); // Ensure the progress bar is updated on page load
+
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+        const subtext = document.getElementById("subtext");
+        const finalText = subtext.textContent;
+        let iteration = 0;
+
+        function scrambleText() {
+            const scrambleInterval = setInterval(() => {
+                subtext.textContent = finalText.split("").map((char, i) => {
+                    if (i < iteration) {
+                        return finalText[i]; // Show correct letters once they've scrambled enough
+                    }
+                    return letters[Math.floor(Math.random() * letters.length)]; // Random character
+                }).join("");
+
+                // Check if we've reached the end
+                if (iteration >= finalText.length) {
+                    clearInterval(scrambleInterval); // Stop when the full text is revealed
+                }
+
+                // Slightly smaller increment for a slower reveal
+                iteration += (finalText.length - iteration) / 12; // Adjust this for a bit slower reveal
+            }, 40); // Slightly increased interval time for smoother effect
+        }
+
+        // Start the scramble effect immediately
+        scrambleText();
     </script>    
     
 </body>
