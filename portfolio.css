@@ -503,14 +503,15 @@ body {
 
 @keyframes colorChange {
     0% { color: #1E90FF; } /* Dodger Blue */
-    50% { color: #d500f9; } /* Electric Purple */
+    50% { color: #d500f9; } /* Coral Reef Color */
     100% { color: #1E90FF; } /* Dodger Blue */
 }
 
 /* Keyframes for typewriter effect */
 @keyframes typewriter {
-    from { width: 0;}
-    to {width: 98%;}}
+    from { width: 0; }
+    to { width: 98%; }
+}
 
 /* Keyframes for blinking cursor effect */
 @keyframes blink {
@@ -545,12 +546,13 @@ h2 {
     overflow: hidden; /* Ensures the text stays within the element */
     white-space: nowrap; /* Prevents text from wrapping */
     border-right: 2px solid #ffffff; /* Creates a cursor effect */
+    width: 0; /* Start with no width for typewriter effect */
     opacity: 0; /* Initially hidden */
     animation:
-            fadeIn 0s 2s forwards,
-            typewriter 3s steps(40, end) forwards 2s, /* Delay added here */
-            blink 0.75s step-end infinite 2s, /* Delay added here */
-            colorChange 5s linear infinite 2s, /* Delay added here */
+            fadeIn 0s 2.5s forwards, /* Fade in after 2.5 seconds */
+            typewriter 3s steps(40, end) forwards 2.5s, /* Sync typewriter with fade-in */
+            blink 0.75s step-end infinite 2.5s, /* Delay added here */
+            colorChange 5s linear infinite 2.5s, /* Delay added here */
             cutInHalf 1s 7s forwards; /* Delay added here */
     font-size: 2rem;
     color: #ffffff;
@@ -562,6 +564,7 @@ h2 {
 @keyframes fadeIn {
     to { opacity: 1; } /* Makes the text visible */
 }
+
 
 .projects {
     display: flex;
