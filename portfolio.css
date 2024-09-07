@@ -35,6 +35,21 @@ body {
     color: #8C8C8C;
     letter-spacing: 0.05em;
     font-weight: 400;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards; /* Apply animation */
+}
+
+/* Keyframes for the fadeIn effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully hidden */
+    }
+    66% {
+        opacity: 0; /* Stay hidden for 0.5 seconds */
+    }
+    100% {
+        opacity: 1; /* Fully visible at the end */
+    }
 }
 
 /* Header Styling with transition */
