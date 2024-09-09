@@ -425,6 +425,26 @@ body {
     padding-right: 2rem;
 }
 
+.project-buttons {
+    margin-top: 0.5rem; /* Add some space above the buttons */
+}
+
+.project-link {
+    display: block;
+    font-size: 1.2rem;
+    color: #1E90FF;
+    text-decoration: none;
+    margin-right: 2rem; /* Space between the two buttons */
+    font-weight: 500; /* Make the buttons stand out a bit more */
+    transition: text-decoration 0.3s ease; /* Smooth underline on hover */
+    margin-bottom: 1rem;
+}
+
+.project-link:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+
 /* Resume Link Styling */
 .resume-link {
     color: #1E90FF; /* Blue color */
