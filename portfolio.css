@@ -372,6 +372,59 @@ body {
     padding-right: 2rem; /* Ensure text does not touch the edge of the container */
 }
 
+.project-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start;
+    margin-top: 27vh;
+    text-align: left; /* Align text to the left */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.about-project img {
+    max-width: 28rem; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 6rem; /* Space between image and text */
+}
+
+.about-text {
+    max-width: 35rem; /* Adjust the width of the text container */
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+    justify-content: flex-start; /* Ensure the text aligns to the top */
+    padding: 0; /* Remove any padding that could cause misalignment */
+}
+
+.project-subtext {
+    font-size: 1rem;
+    color: #8c8c8c;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: none;
+    line-height: 1.5;
+    padding-right: 2rem;
+    margin-top: 0; /* Remove any top margins to align text properly */
+}
+
+.project {
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-bottom: 1rem; /* Space between title and description */
+}
+
+.project-description {
+    font-size: 1.2rem;
+    color: #8c8c8c;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    padding-right: 2rem;
+}
+
 /* Resume Link Styling */
 .resume-link {
     color: #1E90FF; /* Blue color */
