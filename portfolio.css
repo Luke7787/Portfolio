@@ -372,6 +372,30 @@ body {
     padding-right: 2rem; /* Ensure text does not touch the edge of the container */
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    align-items: center;     /* Horizontally centers the content */
+    text-align: center;      /* Centers text inside */
+}
+
+.text2 {
+    margin-top: 8.5rem;
+    font-size: 1.5rem;      /* Adjust size for the subheader */
+    color: #8c8c8c;        /* Adjust subheader color */
+    font-weight: 400;
+    margin-bottom: 0.7rem;    /* Space between subheader and main heading */
+    letter-spacing: 2px;    /* Adds spacing between letters */
+    text-transform: uppercase; /* Makes the subheader uppercase */
+}
+
+.project-heading {
+    font-size: 2.5rem;       /* Adjust as needed */
+    color: #ffffff;          /* Adjust text color */
+    margin: 0;               /* Remove any default margin */
+}
+
 .project-container {
     display: flex; /* Use flexbox for layout */
     align-items: flex-start;
@@ -386,7 +410,7 @@ body {
     border: 2px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 6rem; /* Space between image and text */
+    margin-right: 5rem; /* Space between image and text */
 }
 
 .about-text {
@@ -638,27 +662,3 @@ h2 {
     to { opacity: 1; } /* Makes the text visible */
 }
 
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically centers the content */
-    align-items: center;     /* Horizontally centers the content */
-    text-align: center;      /* Centers text inside */
-}
-
-.project-heading {
-    font-size: 2.5rem;       /* Adjust as needed */
-    color: #ffffff;          /* Adjust text color */
-    margin: 0;               /* Remove any default margin */
-}
-
-.text2 {
-    margin-top: 8.5rem;
-    font-size: 1.5rem;      /* Adjust size for the subheader */
-    color: #8c8c8c;        /* Adjust subheader color */
-    font-weight: 400;
-    margin-bottom: 0.7rem;    /* Space between subheader and main heading */
-    letter-spacing: 2px;    /* Adds spacing between letters */
-    text-transform: uppercase; /* Makes the subheader uppercase */
-}
