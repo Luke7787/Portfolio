@@ -406,7 +406,7 @@ body {
 
 .about-project img {
     max-width: 28rem; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
+    height: 30rem; /* Maintain aspect ratio */
     border: 2px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
