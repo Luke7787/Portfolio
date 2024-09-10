@@ -778,3 +778,76 @@ h2 {
     font-size: 2.5em; /* Larger font size for emphasis */
     color: #fff; /* Text color */
 }
+
+#ending {
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    padding: 4rem 0; /* Padding on top and bottom */
+    text-align: center; /* Center-align text */
+}
+
+.ending-container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.ending-container h5 {
+    font-size: 1.5rem; /* Adjust font size for the heading */
+    color: #1e90ff; /* Dodger Blue color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.ending-container p {
+    font-size: 1.2rem; /* Adjust font size for the contact information */
+    margin-bottom: 1rem; /* Space below paragraphs */
+}
+
+.ending-container a {
+    color: #1e90ff; /* Blue color for the email link */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.ending-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.ending-icons {
+    margin: 2rem 0; /* Margin around social icons */
+}
+
+.ending-icons a {
+    margin: 0 1rem; /* Space between icons */
+    display: inline-block; /* Align icons horizontally */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.ending-icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Circular background */
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.ending-icons i {
+    font-size: 40px; /* Adjust icon size as needed */
+    color: #1e90ff; /* Blue color for icons */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.ending-icons a:hover i {
+    color: white; /* Change color on hover */
+}
+
+.ending-icon-container:hover {
+    transform: scale(1.1); /* Slight scale up on hover */
+    background-color: #1e90ff; /* Change background color on hover */
+}
+
+footer {
+    margin-top: 2rem; /* Space above footer text */
+    font-size: 1rem; /* Font size for footer text */
+}
