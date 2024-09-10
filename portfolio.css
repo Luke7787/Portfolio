@@ -780,10 +780,10 @@ h2 {
 }
 
 #ending {
-    background-color: #f4f4f4; /* Light background color */
-    color: #333; /* Dark text color for contrast */
-    padding: 4rem 0; /* Padding on top and bottom */
-    text-align: center; /* Center-align text */
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Subtle gradient background */
+    color: #333;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 .ending-container {
@@ -792,14 +792,17 @@ h2 {
 }
 
 .ending-container h5 {
-    font-size: 1.5rem; /* Adjust font size for the heading */
-    color: #1e90ff; /* Dodger Blue color for the heading */
-    margin-bottom: 1rem; /* Space below the heading */
+    font-size: 2rem; /* Larger heading size */
+    color: #1e90ff;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* Change font */
+    font-weight: 700; /* Bold heading */
 }
 
 .ending-container p {
-    font-size: 1.2rem; /* Adjust font size for the contact information */
-    margin-bottom: 1rem; /* Space below paragraphs */
+    font-size: 1.1rem; /* Slightly smaller font size */
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif; /* Change font */
 }
 
 .ending-container a {
@@ -825,11 +828,12 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    border-radius: 50%; /* Circular background */
-    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
-    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    width: 60px; /* Slightly larger size */
+    height: 60px; /* Slightly larger size */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25); /* Slightly more opaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ending-icons i {
@@ -843,11 +847,25 @@ h2 {
 }
 
 .ending-icon-container:hover {
-    transform: scale(1.1); /* Slight scale up on hover */
-    background-color: #1e90ff; /* Change background color on hover */
+    transform: scale(1.1);
+    background-color: #1e90ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 footer {
-    margin-top: 2rem; /* Space above footer text */
-    font-size: 1rem; /* Font size for footer text */
+    margin-top: 2rem;
+    font-size: 0.9rem; /* Smaller font size for the footer */
+    color: #555; /* Slightly lighter color */
+    font-family: 'Open Sans', sans-serif;
 }
+
+footer p {
+    margin: 0;
+    font-weight: 300; /* Lighter text weight */
+}
+
+.email-link {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    font-weight: 700; /* Optional: Make the text bold */
+}
+
