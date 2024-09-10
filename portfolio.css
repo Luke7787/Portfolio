@@ -780,7 +780,6 @@ h2 {
 }
 
 #ending {
-    background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Subtle gradient background */
     color: #333;
     padding: 4rem 0;
     text-align: center;
@@ -793,7 +792,7 @@ h2 {
 
 .ending-container h5 {
     font-size: 2rem; /* Larger heading size */
-    color: #1e90ff;
+    color: white;
     margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif; /* Change font */
     font-weight: 700; /* Bold heading */
@@ -806,12 +805,12 @@ h2 {
 }
 
 .ending-container a {
-    color: #1e90ff; /* Blue color for the email link */
+    color: white; /* Blue color for the email link */
     text-decoration: none; /* Remove underline from link */
 }
 
 .ending-container a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #1e90ff;
 }
 
 .ending-icons {
@@ -853,19 +852,25 @@ h2 {
 }
 
 footer {
-    margin-top: 2rem;
-    font-size: 0.9rem; /* Smaller font size for the footer */
-    color: #555; /* Slightly lighter color */
-    font-family: 'Open Sans', sans-serif;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically if needed */
+    width: 100%; /* Ensure the footer takes the full width of the page */
+    padding: 1rem 0; /* Add padding for spacing */
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* Remove default margins */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: rgba(255, 255, 255, 0.5); /* White color with some transparency */
     font-weight: 300; /* Lighter text weight */
+    font-family: 'Open Sans', sans-serif; /* Font family */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
+
 .email-link {
-    font-size: 1.5rem; /* Adjust the size as needed */
+    font-size: 1.75rem; /* Adjust the size as needed */
     font-weight: 700; /* Optional: Make the text bold */
 }
 
