@@ -241,7 +241,8 @@
                 </div>
             </div>
             <footer>
-                <p>&copy; 2024 All rights reserved | This template is made by Luke Zhuang</p>
+                <p>&copy; 2024 All rights reserved | This template is made by<p><a href="https://github.com/Luke7787/Portfolio" class="name-button" target="_blank">Luke Zhuang</a></p>
+            </p>
             </footer>
         </div>
     </section>
@@ -324,18 +325,18 @@
                 if (iteration >= finalText.length) {
                     clearInterval(scrambleInterval);
             }
-    }, 55); // Interval time to control the smoothness of the effect
-}
+            }, 55); // Interval time to control the smoothness of the effect
+        }
 
-// Initially hide the text completely
-subtext.style.visibility = 'hidden';
+        // Initially hide the text completely
+        subtext.style.visibility = 'hidden';
 
-// Show the text after a 0.5-second delay and start the scramble effect
-setTimeout(() => {
-    subtext.style.visibility = 'visible'; // Make the text visible
-    subtext.style.opacity = '1'; // Transition to full opacity
-    scrambleText(); // Start the scramble effect
-}, 0); // 0.5 seconds delay
+        // Show the text after a 0.5-second delay and start the scramble effect
+        setTimeout(() => {
+            subtext.style.visibility = 'visible'; // Make the text visible
+            subtext.style.opacity = '1'; // Transition to full opacity
+            scrambleText(); // Start the scramble effect
+        }, 0); // 0.5 seconds delay
 
     </script>    
     

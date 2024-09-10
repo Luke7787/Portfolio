@@ -860,6 +860,7 @@ h2 {
 
 footer {
     margin-top: 4rem;
+    margin-bottom: -5rem;
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically if needed */
@@ -879,4 +880,25 @@ footer p {
 .email-link {
     font-size: 1.75rem; /* Adjust the size as needed */
     font-weight: 700; /* Optional: Make the text bold */
+}
+
+.name-button {
+    margin-left: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 0.5rem; /* Padding around the text */
+    font-size: 1rem; /* Adjust the font size */
+    font-weight: 700; /* Bold font */
+    color: white; /* Initial text color */
+    background-color: #1e90ff; /* Blue background */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.name-button:hover {
+    background-color: #1c86ee; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    color: white; /* Ensure text remains white on hover */
+    transform: scale(1.05);
 }
