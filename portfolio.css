@@ -93,6 +93,11 @@ body {
     opacity: 0; /* Initially hidden */
     animation: revealText 0.7s 0.7s forwards; /* Shortened delay for the text reveal */
     z-index: 1;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.logo:hover {
+    color: #1E90FF; /* Color change on hover */
 }
 
 .logo-bg2 {
