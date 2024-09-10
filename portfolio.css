@@ -712,27 +712,9 @@ h2 {
     text-align: center; /* Center-align text */
 }
 
-.skills-heading {
-    font-size: 2.5rem; /* Adjust font size */
-    color: #1e90ff; /* Blue color for the heading */
-    margin-bottom: 1.5rem; /* Space below the heading */
-    position: relative;
-}
-
-.skills-heading::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 80px;
-    height: 4px;
-    background-color: #1e90ff; /* Blue underline */
-    transform: translateX(-50%);
-}
-
 .skills-grid {
     display: grid; /* Use grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem; /* Space between grid items */
 }
 
@@ -779,7 +761,6 @@ h2 {
 /* Specific styles for the Programming Languages section */
 .programming-languages .skill-list {
     display: grid; /* Use grid layout for Programming Languages */
-    grid-template-columns: repeat(8, 1fr); /* 8 columns */
     gap: 0.5rem; /* Space between items */
     overflow: hidden; /* Hide overflow to ensure items fit within the box */
 }
