@@ -413,6 +413,14 @@ body {
     padding-left: 10rem; /* Add padding to shift content to the right */
 }
 
+/* Styling specifically for the third project container */
+.project-container-third {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10vh; /* Change margin-top for the third section */
+    justify-content: center;
+}
+
 .project-container2 .about-project img {
     max-width: 28rem; /* Adjust image width */
     height: 30rem; /* Maintain aspect ratio */
