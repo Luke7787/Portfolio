@@ -431,6 +431,7 @@ body {
     height: 30rem; /* Maintain aspect ratio */
     border: 2px solid #ddd;
     border-radius: 8px;
+    object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 3rem; /* Increase space between image and text */
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -444,6 +445,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 5rem; /* Space between image and text */
     transition: transform 0.3s ease, filter 0.3s ease;
+    object-fit: cover;
 }
 
 .about-project img:hover {
