@@ -785,31 +785,38 @@ h2 {
     text-align: center;
 }
 
-.ending-container {
+.ending-wrapper {
     width: 80%; /* Adjust width as needed */
     margin: 0 auto; /* Center the container */
 }
 
-.ending-container h5 {
+.ending-content {
+    background-color: #fff; /* Background color for the content container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.ending-content h5 {
     font-size: 2rem; /* Larger heading size */
-    color: white;
+    color: black;
     margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif; /* Change font */
     font-weight: 700; /* Bold heading */
 }
 
-.ending-container p {
-    font-size: 1.1rem; /* Slightly smaller font size */
+.ending-content p {
+    font-size: 1.1rem; /* Font size for the email address */
     margin-bottom: 1rem;
     font-family: 'Open Sans', sans-serif; /* Change font */
 }
 
-.ending-container a {
-    color: white; /* Blue color for the email link */
+.ending-content a {
+    color: black; /* Blue color for the email link */
     text-decoration: none; /* Remove underline from link */
 }
 
-.ending-container a:hover {
+.ending-content a:hover {
     color: #1e90ff;
 }
 
@@ -827,8 +834,8 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px; /* Slightly larger size */
-    height: 60px; /* Slightly larger size */
+    width: 60px; /* Size of the icons */
+    height: 60px; /* Size of the icons */
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.25); /* Slightly more opaque */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
@@ -836,7 +843,7 @@ h2 {
 }
 
 .ending-icons i {
-    font-size: 40px; /* Adjust icon size as needed */
+    font-size: 40px; /* Icon size */
     color: #1e90ff; /* Blue color for icons */
     transition: color 0.3s ease; /* Smooth color transition on hover */
 }
@@ -868,9 +875,7 @@ footer p {
     white-space: nowrap; /* Prevent wrapping */
 }
 
-
 .email-link {
     font-size: 1.75rem; /* Adjust the size as needed */
     font-weight: 700; /* Optional: Make the text bold */
 }
-
