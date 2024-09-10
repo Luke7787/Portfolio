@@ -706,6 +706,7 @@ h2 {
     color: #ffffff; /* White text color */
     padding: 4rem 0; /* Increased padding on top and bottom */
     margin-top: 0rem; /* Space from previous section */
+    border-radius: 90px;
 }
 
 .skills-container {
@@ -791,16 +792,15 @@ h2 {
 }
 
 .ending-content {
-    background-color: #fff; /* Background color for the content container */
+    background-color: #141414; /* Background color for the content container */
     border-radius: 8px; /* Rounded corners */
     padding: 2rem; /* Padding inside the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .ending-content h5 {
     font-size: 2rem; /* Larger heading size */
-    color: black;
-    margin-bottom: 3rem;
+    color: white;
+    margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif; /* Change font */
     font-weight: 700; /* Bold heading */
 }
@@ -812,7 +812,7 @@ h2 {
 }
 
 .ending-content a {
-    color: black; /* Blue color for the email link */
+    color: white; /* Blue color for the email link */
     text-decoration: none; /* Remove underline from link */
 }
 
@@ -859,7 +859,7 @@ h2 {
 }
 
 footer {
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-bottom: -5rem;
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center content horizontally */
