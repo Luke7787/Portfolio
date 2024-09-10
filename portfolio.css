@@ -800,7 +800,7 @@ h2 {
 .ending-content h5 {
     font-size: 2rem; /* Larger heading size */
     color: black;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif; /* Change font */
     font-weight: 700; /* Bold heading */
 }
@@ -859,6 +859,7 @@ h2 {
 }
 
 footer {
+    margin-top: 4rem;
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically if needed */
