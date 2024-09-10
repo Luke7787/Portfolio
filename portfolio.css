@@ -419,7 +419,7 @@ body {
     border: 2px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 4rem; /* Increase space between image and text */
+    margin-left: 3rem; /* Increase space between image and text */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
