@@ -411,6 +411,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 5rem; /* Space between image and text */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about-project img:hover {
+    transform: scale(1.05); /* Slightly zooms in the image */
+    filter: brightness(0.8); /* Adds a shading effect */
 }
 
 .about-text {
