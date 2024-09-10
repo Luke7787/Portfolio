@@ -705,7 +705,7 @@ h2 {
     background-color: #121212; /* Dark background for the section */
     color: #ffffff; /* White text color */
     padding: 4rem 0; /* Increased padding on top and bottom */
-    margin-top: 2rem; /* Space from previous section */
+    margin-top: 0rem; /* Space from previous section */
 }
 
 .skills-container {
@@ -765,4 +765,16 @@ h2 {
     display: grid; /* Use grid layout for Programming Languages */
     gap: 0.5rem; /* Space between items */
     overflow: hidden; /* Hide overflow to ensure items fit within the box */
+}
+
+.skills-intro {
+    margin-top: 10rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: -2rem;
+}
+
+.skills-intro h4 {
+    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #fff; /* Text color */
 }
