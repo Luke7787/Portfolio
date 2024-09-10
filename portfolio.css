@@ -404,7 +404,7 @@ body {
 .project-container {
     display: flex; /* Use flexbox for layout */
     align-items: flex-start;
-    margin-top: 27vh;
+    margin-top: 15vh;
     text-align: left; /* Align text to the left */
     justify-content: center; /* Center the content horizontally */
 }
@@ -722,6 +722,7 @@ h2 {
 }
 
 .skill-category {
+    margin-top: 5rem;
     background-color: #1e1e1e; /* Dark background for categories */
     border-radius: 8px; /* Rounded corners */
     padding: 1.5rem; /* Padding inside categories */
@@ -769,10 +770,10 @@ h2 {
 }
 
 .skills-intro {
-    margin-top: 10rem;
+    margin-top: 8rem;
     text-align: center;
     position: relative;
-    margin-bottom: -2rem;
+    margin-bottom: -10rem;
 }
 
 .skills-intro h4 {
@@ -859,7 +860,7 @@ h2 {
 }
 
 footer {
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-bottom: -5rem;
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center content horizontally */
