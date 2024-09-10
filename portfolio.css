@@ -404,6 +404,25 @@ body {
     justify-content: center; /* Center the content horizontally */
 }
 
+.project-container2 {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start;
+    margin-top: 27vh;
+    text-align: left; /* Align text to the left */
+    justify-content: center; /* Center the content horizontally */
+    padding-left: 10rem; /* Add padding to shift content to the right */
+}
+
+.project-container2 .about-project img {
+    max-width: 28rem; /* Adjust image width */
+    height: 30rem; /* Maintain aspect ratio */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 4rem; /* Increase space between image and text */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
 .about-project img {
     max-width: 28rem; /* Adjust image width */
     height: 30rem; /* Maintain aspect ratio */
