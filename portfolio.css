@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Body Styling */
 body {
     display: flex;
     flex-direction: column;
@@ -11,14 +10,12 @@ body {
     background-color: #141414;
 }
 
-/* Container Styling */
 .container {
     margin-top: 27vh;
     text-align: center;
     position: relative;
 }
 
-/* Main Heading Styling */
 .main-heading {
     font-size: 3.5rem;
     line-height: 1.3;
@@ -29,18 +26,16 @@ body {
     margin-bottom: -1rem;
 }
 
-/* Subtext Styling */
 .subtext{
     font-size: 1.5rem;
     color: #8C8C8C;
     letter-spacing: 0.05em;
     font-weight: 400;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Ensure it's not visible in layout */
-    transition: opacity 0.1s ease-in-out; /* Smooth transition for opacity */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out;
 }
 
-/* Header Styling with transition */
 .site-header {
     position: fixed;
     top: 6vh;
@@ -55,12 +50,10 @@ body {
     transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 
-/* Add a class for hiding the header */
 .header-hidden {
-    top: -100px; /* Adjust based on header height */
+    top: -100px;
 }
 
-/* Transparent Header Styling */
 .header-transparent {
     background-color: transparent;
     box-shadow: none;
@@ -69,7 +62,7 @@ body {
 .logo-container {
     position: relative;
     display: inline-block;
-    overflow: hidden; /* Ensures the background rectangle stays within bounds */
+    overflow: hidden;
 }
 
 .logo-bg {
@@ -78,26 +71,25 @@ body {
     left: 0;
     width: 100%;
     height: 60%;
-    background-color: #1E90FF; /* Rectangle background color */
+    background-color: #1E90FF;
     animation: slideIn 0.9s ease-out forwards, collapseLeft 0.9s ease-in-out 0.9s forwards;
     z-index:2
 }
 
-/* Logo Styling */
 .logo {
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    opacity: 0; /* Initially hidden */
-    animation: revealText 0.7s 0.7s forwards; /* Shortened delay for the text reveal */
+    opacity: 0;
+    animation: revealText 0.7s 0.7s forwards;
     z-index: 1;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
 .logo:hover {
-    color: #1E90FF; /* Color change on hover */
+    color: #1E90FF;
 }
 
 .logo-bg2 {
@@ -106,12 +98,11 @@ body {
     left: 0;
     width: 100%;
     height: 90%;
-    background-color: #1E90FF; /* Rectangle background color */
+    background-color: #1E90FF;
     animation: slideIn 0.9s ease-out forwards, collapseLeft 0.9s ease-in-out 0.9s forwards;
     z-index:2
 }
 
-/* Logo Styling */
 .logo2 {
     font-size: 3.5rem;
     line-height: 1.3;
@@ -119,8 +110,8 @@ body {
     letter-spacing: 0.1em;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    opacity: 0; /* Initially hidden */
-    animation: revealText 0.7s 0.8s forwards; /* Shortened delay for the text reveal */
+    opacity: 0; 
+    animation: revealText 0.7s 0.8s forwards;
     z-index: 1;
 }
 
@@ -141,15 +132,15 @@ body {
         left: 0;
         opacity: 1;
     }
-    99% {
-        width: 0%;
-        left: 100%; /* Moves the left side to the right end */
-        opacity: 1; /* Remain fully visible until the very end */
-    }
-    100% {
+    99% { /* Remain fully visible until the very end */
         width: 0%;
         left: 100%;
-        opacity: 0; /* Fully transparent at the very end */
+        opacity: 1;
+    }
+    100% { /* Fully transparent at the very end */
+        width: 0%;
+        left: 100%;
+        opacity: 0;
     }
 }
 
@@ -235,7 +226,6 @@ body {
     left: 0;
 }
 
-/* Menu Image Styling */
 .menu-image {
     width: 50%;
     background-color: #333;
@@ -306,8 +296,8 @@ body {
 }
 
 .menu-link:hover {
-    color: #1E90FF; /* Blue color for hover effect */
-    transform: scale(1.025); /* Slightly enlarge the button on hover */
+    color: #1E90FF;
+    transform: scale(1.025);
 }
 
 /* Hidden Class for Elements */
@@ -328,16 +318,16 @@ body {
     z-index: -1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
-    margin-bottom: 0.5rem; /* Reduced margin to bring text closer */
+    margin-bottom: 0.5rem;
 }
 
 /* About Image Styling */
 .about-image {
-    width: 15rem; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 2rem; /* Space between image and text */
-    border-radius: 10px; /* Optional: Add rounded corners to the image */
-    object-fit: cover; /* Ensure the image covers its container */
+    width: 15rem;
+    height: auto;
+    margin-right: 2rem;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 /* About Text Styling */
@@ -352,8 +342,8 @@ body {
 
 /* Subtext Styling */
 .subtext2{
-    bottom: 0; /* Adjust as needed */
-    left: 0; /* Adjust as needed */
+    bottom: 0;
+    left: 0;
     position: absolute;
     font-size: 2rem;
     color: white;
@@ -365,100 +355,99 @@ body {
 }
 
 .about-description {
-    margin-top: -2.75rem; /* Space above the paragraph */
-    font-size: 1.2rem; /* Adjust font size as needed */
-    margin-left: 5.75rem; /* Align with other content */
+    margin-top: -2.75rem; 
+    font-size: 1.2rem;
+    margin-left: 5.75rem;
     color: #8c8c8c;
     text-align: left;
     font-weight: 400;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional for a subtle shadow effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     text-transform: none;
-    line-height: 1.5; /* Improve readability by adjusting line height */
-    padding-right: 2rem; /* Ensure text does not touch the edge of the container */
+    line-height: 1.5; 
+    padding-right: 2rem;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically centers the content */
-    align-items: center;     /* Horizontally centers the content */
-    text-align: center;      /* Centers text inside */
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
 }
 
 .text2 {
     margin-top: 8.5rem;
-    font-size: 1.5rem;      /* Adjust size for the subheader */
-    color: #8c8c8c;        /* Adjust subheader color */
+    font-size: 1.5rem;      
+    color: #8c8c8c;        
     font-weight: 400;
-    margin-bottom: 0.7rem;    /* Space between subheader and main heading */
-    letter-spacing: 2px;    /* Adds spacing between letters */
-    text-transform: uppercase; /* Makes the subheader uppercase */
+    margin-bottom: 0.7rem;    
+    letter-spacing: 2px;   
+    text-transform: uppercase; 
 }
 
 .project-heading {
-    font-size: 2.5rem;       /* Adjust as needed */
-    color: #ffffff;          /* Adjust text color */
-    margin: 0;               /* Remove any default margin */
+    font-size: 2.5rem;       
+    color: #ffffff;         
+    margin: 0;              
 }
 
 .project-container {
-    display: flex; /* Use flexbox for layout */
+    display: flex;
     align-items: flex-start;
     margin-top: 15vh;
-    text-align: left; /* Align text to the left */
-    justify-content: center; /* Center the content horizontally */
+    text-align: left; 
+    justify-content: center; 
 }
 
 .project-container2 {
-    display: flex; /* Use flexbox for layout */
+    display: flex; 
     align-items: flex-start;
     margin-top: 10vh;
-    text-align: left; /* Align text to the left */
-    justify-content: center; /* Center the content horizontally */
-    padding-left: 10rem; /* Add padding to shift content to the right */
+    text-align: left; 
+    justify-content: center; 
+    padding-left: 10rem; 
 }
 
-/* Styling specifically for the third project container */
 .project-container-third {
     display: flex;
     align-items: flex-start;
-    margin-top: 10vh; /* Change margin-top for the third section */
+    margin-top: 10vh;
     justify-content: center;
 }
 
 .project-container2 .about-project img {
-    max-width: 28rem; /* Adjust image width */
-    height: 30rem; /* Maintain aspect ratio */
+    max-width: 28rem; 
+    height: 30rem; 
     border: 2px solid #ddd;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 3rem; /* Increase space between image and text */
+    margin-left: 3rem; 
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .about-project img {
-    max-width: 26rem; /* Adjust image width */
-    height: 28rem; /* Maintain aspect ratio */
+    max-width: 26rem; 
+    height: 28rem; 
     border: 2px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 5rem; /* Space between image and text */
+    margin-right: 5rem; 
     transition: transform 0.3s ease, filter 0.3s ease;
     object-fit: cover;
 }
 
 .about-project img:hover {
-    transform: scale(1.05); /* Slightly zooms in the image */
-    filter: brightness(0.8); /* Adds a shading effect */
+    transform: scale(1.05); 
+    filter: brightness(0.8); 
 }
 
 .about-text {
-    max-width: 35rem; /* Adjust the width of the text container */
+    max-width: 35rem; 
     display: flex;
-    flex-direction: column; /* Stack the text vertically */
-    justify-content: flex-start; /* Ensure the text aligns to the top */
-    padding: 0; /* Remove any padding that could cause misalignment */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    padding: 0; 
 }
 
 .project-subtext {
@@ -469,7 +458,7 @@ body {
     text-transform: none;
     line-height: 1.5;
     padding-right: 2rem;
-    margin-top: 0; /* Remove any top margins to align text properly */
+    margin-top: 0; 
 }
 
 .project {
@@ -477,7 +466,7 @@ body {
     color: white;
     letter-spacing: 0.05em;
     font-weight: 400;
-    margin-bottom: 1rem; /* Space between title and description */
+    margin-bottom: 1rem; 
 }
 
 .project-description {
@@ -490,7 +479,7 @@ body {
 }
 
 .project-buttons {
-    margin-top: 0.5rem; /* Add some space above the buttons */
+    margin-top: 0.5rem; 
 }
 
 .project-link {
@@ -498,29 +487,27 @@ body {
     font-size: 1.2rem;
     color: #1E90FF;
     text-decoration: none;
-    margin-right: 2rem; /* Space between the two buttons */
-    font-weight: 500; /* Make the buttons stand out a bit more */
-    transition: text-decoration 0.3s ease; /* Smooth underline on hover */
+    margin-right: 2rem; 
+    font-weight: 500; 
+    transition: text-decoration 0.3s ease; 
     margin-bottom: 1rem;
 }
 
 .project-link:hover {
-    text-decoration: underline; /* Underline text on hover */
+    text-decoration: underline; 
 }
 
-/* Resume Link Styling */
 .resume-link {
-    color: #1E90FF; /* Blue color */
+    color: #1E90FF;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .resume-link:hover {
-    color: #4A90E2; /* Slightly lighter blue on hover */
+    color: #4A90E2;
     text-decoration: underline;
 }
 
-/* Additional styling for the icons */
 .social-icons {
     margin-top: 12px;
     margin-left: 18rem;
@@ -529,110 +516,106 @@ body {
 .social-icons a {
     margin: 0 10px;
     display: inline-block;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
-/* Updated icon styling */
 .social-icons i {
-    font-size: 40px; /* Adjust icon size as needed */
+    font-size: 40px;
     color: #1E90FF;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease;
 }
 
-/* Optional hover effect */
 .social-icons a:hover i {
-    color: white; /* Slightly darker blue on hover */
+    color: white; 
 }
 
 .icon-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    border-radius: 50%; /* Makes the background circular */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
-    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    transition: background-color 0.3s ease; 
 }
 
 .icon-container i {
-    font-size: 24px; /* Adjust icon size as needed */
-    color: #1B76D2; /* Icon color */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    font-size: 24px; 
+    color: #1B76D2; 
+    transition: color 0.3s ease; 
 }
 
 .icon-container:hover {
-    transform: scale(1.1); /* Scale up the icon on hover */
-    color: #1E90FF; /* Optional: Change icon color on hover */
+    transform: scale(1.1); 
+    color: #1E90FF; 
 }
 
 .contact-text {
     margin-top: 2rem;
-    text-align: center; /* Center the text horizontally */
-    font-size: 1.25rem; /* Adjust font size as needed */
-    color: white; /* Set text color */
+    text-align: center; 
+    font-size: 1.25rem; 
+    color: white; 
     margin-left: 16.25rem;
 }
 
 .contact-info {
     margin-left: 22rem;
-    font-size: 18px; /* Adjust font size as needed */
-    margin-top: 0px; /* Space between "Contact me here!" and the contact details */
+    font-size: 18px; 
+    margin-top: 0px; 
     padding-bottom: 10rem;
 }
 
 .contact-label {
-    color: #8c8c8c; /* Color for "Email:" and "Phone:" */
+    color: #8c8c8c; 
 }
 
 .contact-detail {
-    color: #1E90FF; /* Blue color for links */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: 400; /* Optional: Adjust font weight */
+    color: #1E90FF; 
+    text-decoration: none; 
+    font-weight: 400; 
 }
 
 .contact-detail:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
 
 .about-image {
     position: absolute;
     top: 16rem;
-    left: -5rem; /* Adjust the left position as needed */
+    left: -5rem;
     display: block;
-    margin: 0; /* Remove default margin since position is absolute */
-    max-width: 50rem; /* Adjust width as needed */
-    max-height: 33rem; /* Adjust height as needed */
-    width: auto; /* Allow width to adjust while maintaining aspect ratio */
-    height: auto; /* Allow height to adjust while maintaining aspect ratio */
-    border: 2px solid #ddd; /* Light border color */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
-    z-index: -1; /* Place the image behind other elements */
+    margin: 0; 
+    max-width: 50rem; 
+    max-height: 33rem; 
+    width: auto; 
+    height: auto; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: -1; 
 }
 
-
-/* Create a smaller space between email and phone */
 .small-space {
     display: block;
-    height: 7.5px; /* Adjust the height to make the space smaller */
-    width: 100%; /* Ensures it takes the full width of the container */
+    height: 7.5px; 
+    width: 100%; 
 }
 
-/* Example progress bar CSS */
+/* progress bar CSS */
 .progress-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 5px;
-    z-index: 9999; /* Ensure it's on top of other content */
+    z-index: 9999; 
 }
 
 .progress-bar {
     height: 100%;
     background: #007bff;
-    width: 0%; /* Start with 0 width */
+    width: 0%; 
     transition: width 0.1s ease;
 }
 
@@ -679,94 +662,94 @@ body {
 
 /* Apply typewriter effect to h2 */
 h2 {
-    overflow: hidden; /* Ensures the text stays within the element */
-    white-space: nowrap; /* Prevents text from wrapping */
-    border-right: 2px solid #ffffff; /* Creates a cursor effect */
-    width: 0; /* Start with no width for typewriter effect */
-    opacity: 0; /* Initially hidden */
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 2px solid #ffffff; 
+    width: 0; 
+    opacity: 0; 
     animation:
-            fadeIn 0s 2.5s forwards, /* Fade in after 2.5 seconds */
-            typewriter 3s steps(40, end) forwards 2.5s, /* Sync typewriter with fade-in */
-            blink 0.75s step-end infinite 2.5s, /* Delay added here */
-            colorChange 5s linear infinite 2.5s, /* Delay added here */
-            cutInHalf 1s 7s forwards; /* Delay added here */
+            fadeIn 0s 2.5s forwards, 
+            typewriter 3s steps(40, end) forwards 2.5s, 
+            blink 0.75s step-end infinite 2.5s,
+            colorChange 5s linear infinite 2.5s, 
+            cutInHalf 1s 7s forwards; 
     font-size: 2rem;
     color: #ffffff;
-    display: inline-block; /* Keeps the h2 element from stretching to full width */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add depth with shadow */
+    display: inline-block; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 /* Keyframes to fade in the text after the delay */
 @keyframes fadeIn {
-    to { opacity: 1; } /* Makes the text visible */
+    to { opacity: 1; } 
 }
 
 #skills {
-    background-color: #121212; /* Dark background for the section */
-    color: #ffffff; /* White text color */
-    padding: 4rem 0; /* Increased padding on top and bottom */
-    margin-top: 0rem; /* Space from previous section */
+    background-color: #121212; 
+    color: #ffffff; 
+    padding: 4rem 0; 
+    margin-top: 0rem; 
     border-radius: 90px;
 }
 
 .skills-container {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container */
-    text-align: center; /* Center-align text */
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .skills-grid {
-    display: grid; /* Use grid layout */
+    display: grid; 
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; /* Space between grid items */
+    gap: 2rem; 
 }
 
 .skill-category {
     margin-top: 5rem;
-    background-color: #1e1e1e; /* Dark background for categories */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1.5rem; /* Padding inside categories */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    background-color: #1e1e1e; 
+    border-radius: 8px; 
+    padding: 1.5rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .skill-category:hover {
-    transform: translateY(-5px); /* Slight lift effect */
+    transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(30, 144, 255, 0.7);
 }
 
 .skill-category h3 {
-    font-size: 2rem; /* Adjust font size */
-    color: #ffffff; /* White color for category titles */
-    margin-bottom: 1rem; /* Space below category title */
+    font-size: 2rem; 
+    color: #ffffff; 
+    margin-bottom: 1rem; 
 }
 
 .skill-list {
-    display: flex; /* Keep using flexbox for other categories */
-    flex-wrap: wrap; /* Allow items to wrap */
-    gap: 0.5rem; /* Space between items */
-    overflow: hidden; /* Hide overflow to ensure items fit within the box */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 0.5rem; 
+    overflow: hidden; 
 }
 
 .skill-item {
-    font-size: 1.2rem; /* Adjust font size */
-    color: #b0b0b0; /* Light gray color for skills */
-    padding: 0.5rem 1rem; /* Padding around text */
-    border-radius: 4px; /* Rounded corners */
-    background-color: #2c2c2c; /* Dark background for items */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-size: 1.2rem; 
+    color: #b0b0b0; 
+    padding: 0.5rem 1rem; 
+    border-radius: 4px; 
+    background-color: #2c2c2c; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .skill-item:hover {
-    background-color: #3a3a3a; /* Darker background on hover */
-    color: #ffffff; /* White text on hover */
+    background-color: #3a3a3a; 
+    color: #ffffff;
 }
 
 /* Specific styles for the Programming Languages section */
 .programming-languages .skill-list {
-    display: grid; /* Use grid layout for Programming Languages */
-    gap: 0.5rem; /* Space between items */
-    overflow: hidden; /* Hide overflow to ensure items fit within the box */
+    display: grid; 
+    gap: 0.5rem;
+    overflow: hidden; 
 }
 
 .skills-intro {
@@ -777,8 +760,8 @@ h2 {
 }
 
 .skills-intro h4 {
-    font-size: 2.5em; /* Larger font size for emphasis */
-    color: #fff; /* Text color */
+    font-size: 2.5em; 
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     font-weight: 400;
@@ -791,33 +774,33 @@ h2 {
 }
 
 .ending-wrapper {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container */
+    width: 80%;
+    margin: 0 auto;
 }
 
 .ending-content {
-    background-color: #141414; /* Background color for the content container */
-    border-radius: 8px; /* Rounded corners */
-    padding: 2rem; /* Padding inside the container */
+    background-color: #141414; 
+    border-radius: 8px; 
+    padding: 2rem; 
 }
 
 .ending-content h5 {
-    font-size: 2rem; /* Larger heading size */
+    font-size: 2rem; 
     color: white;
     margin-bottom: 2rem;
-    font-family: 'Roboto', sans-serif; /* Change font */
-    font-weight: 700; /* Bold heading */
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700; 
 }
 
 .ending-content p {
-    font-size: 1.1rem; /* Font size for the email address */
+    font-size: 1.1rem; 
     margin-bottom: 1rem;
-    font-family: 'Open Sans', sans-serif; /* Change font */
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .ending-content a {
-    color: white; /* Blue color for the email link */
-    text-decoration: none; /* Remove underline from link */
+    color: white; 
+    text-decoration: none; 
 }
 
 .ending-content a:hover {
@@ -825,84 +808,84 @@ h2 {
 }
 
 .ending-icons {
-    margin: 2rem 0; /* Margin around social icons */
+    margin: 2rem 0; 
 }
 
 .ending-icons a {
-    margin: 0 1rem; /* Space between icons */
-    display: inline-block; /* Align icons horizontally */
-    text-decoration: none; /* Remove underline from links */
+    margin: 0 1rem; 
+    display: inline-block; 
+    text-decoration: none; 
 }
 
 .ending-icon-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px; /* Size of the icons */
-    height: 60px; /* Size of the icons */
+    width: 60px;
+    height: 60px; 
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.25); /* Slightly more opaque */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    background-color: rgba(255, 255, 255, 0.25); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ending-icons i {
-    font-size: 40px; /* Icon size */
-    color: #1e90ff; /* Blue color for icons */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    font-size: 40px;
+    color: #1e90ff; 
+    transition: color 0.3s ease; 
 }
 
 .ending-icons a:hover i {
-    color: white; /* Change color on hover */
+    color: white; 
 }
 
 .ending-icon-container:hover {
     transform: scale(1.1);
     background-color: #1e90ff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 footer {
     margin-top: 3rem;
     margin-bottom: -5rem;
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically if needed */
-    width: 100%; /* Ensure the footer takes the full width of the page */
-    padding: 1rem 0; /* Add padding for spacing */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 1rem 0; 
 }
 
 footer p {
-    margin: 0; /* Remove default margins */
-    font-size: 1rem; /* Adjust font size as needed */
-    color: rgba(255, 255, 255, 0.5); /* White color with some transparency */
-    font-weight: 300; /* Lighter text weight */
-    font-family: 'Open Sans', sans-serif; /* Font family */
-    white-space: nowrap; /* Prevent wrapping */
+    margin: 0; 
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5); 
+    font-weight: 300; 
+    font-family: 'Open Sans', sans-serif; 
+    white-space: nowrap; 
 }
 
 .email-link {
-    font-size: 1.75rem; /* Adjust the size as needed */
-    font-weight: 700; /* Optional: Make the text bold */
+    font-size: 1.75rem; 
+    font-weight: 700; 
 }
 
 .name-button {
     margin-left: 0.5rem;
     display: inline-block;
-    padding: 0.5rem 0.5rem; /* Padding around the text */
-    font-size: 1rem; /* Adjust the font size */
-    font-weight: 700; /* Bold font */
-    color: white; /* Initial text color */
-    background-color: #1e90ff; /* Blue background */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    padding: 0.5rem 0.5rem; 
+    font-size: 1rem; 
+    font-weight: 700; 
+    color: white; 
+    background-color: #1e90ff; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .name-button:hover {
-    background-color: #1c86ee; /* Darker blue on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    color: white; /* Ensure text remains white on hover */
+    background-color: #1c86ee;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    color: white; 
     transform: scale(1.05);
 }
