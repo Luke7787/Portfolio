@@ -23,7 +23,7 @@
         <div class="menu-buttons">
             <a href="#" id="restart-page" class="menu-link no-bar">Luke Zhuang</a>
             <a href="#" id="restart-home" class="menu-link" data-number="01">Home</a>
-            <a href="#" class="menu-link" data-number="02">Resume & Skills</a>
+            <a href="#" class="menu-link" id="resume-skills-link" data-number="02">Resume & Skills</a>
             <a href="#" class="menu-link" data-number="03">Portfolio</a>
         </div>
     </div>
@@ -53,7 +53,7 @@
         <h2 >HERE TO MAKE AN IMPACT!</h2>
     </div>
 
-    <div class="container">
+    <div id="about-section" class="container">
         <img src="about.jpg" alt="About" class="about-image">
         <div class="About">
             ABOUT<br>
@@ -256,6 +256,16 @@
         const siteHeader = document.querySelector('.site-header');
         const progressBar = document.getElementById('myProgressBar'); // Get the progress bar element
     
+        window.onload = function() {
+            // Scroll to the top of the page on load
+            window.scrollTo(0, 0);
+            
+            // Remove the anchor from the URL without reloading the page
+            if (window.location.hash) {
+                window.history.replaceState(null, null, window.location.pathname);
+            }
+        }
+    
         // Toggle the menu open/close
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
@@ -300,58 +310,71 @@
         // Initial check in case the page loads scrolled down
         checkHeaderVisibility();
         updateProgressBar(); // Ensure the progress bar is updated on page load
-
+    
         const letters = "ゲネバコンヰゾケウユハポフチヘツムカザルマボレピスルベトペアドプヤブヲンタシデラソミネブニヌレクサゲガバーネゼ";
         const subtext = document.getElementById("subtext");
         const finalText = subtext.textContent;
         let iteration = 0;
-
+    
         function scrambleText() {
             const duration = 1710; // Total duration of the scramble effect in milliseconds
             const startTime = Date.now(); // Record the start time
-
+    
             const scrambleInterval = setInterval(() => {
                 const elapsedTime = Date.now() - startTime; // Time elapsed since the start
                 iteration = Math.min(finalText.length, Math.floor((elapsedTime / duration) * finalText.length));
-
+    
                 subtext.textContent = finalText.split("").map((char, i) => {
                     if (i < iteration) {
                         return finalText[i]; // Show correct letters once they've scrambled enough
                     }
                     return letters[Math.floor(Math.random() * letters.length)]; // Random character
                 }).join("");
-
+    
                 // Stop when the full text is revealed
                 if (iteration >= finalText.length) {
                     clearInterval(scrambleInterval);
-            }
+                }
             }, 55); // Interval time to control the smoothness of the effect
         }
-
+    
         // Initially hide the text completely
         subtext.style.visibility = 'hidden';
-
+    
         // Show the text after a 0.5-second delay and start the scramble effect
         setTimeout(() => {
             subtext.style.visibility = 'visible'; // Make the text visible
             subtext.style.opacity = '1'; // Transition to full opacity
             scrambleText(); // Start the scramble effect
         }, 0); // 0.5 seconds delay
-
-
+    
         // restart page when "Luke Zhuang" menu button is pressed
         document.getElementById('restart-page').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        window.location.reload(); // Reload the page
+            event.preventDefault(); // Prevent the default anchor behavior
+            window.location.reload(); // Reload the page
         });
-
+    
         // restart page when "Luke Zhuang" menu button is pressed
         document.getElementById('restart-home').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        window.location.reload(); // Reload the page
+            event.preventDefault(); // Prevent the default anchor behavior
+            window.location.reload(); // Reload the page
         });
-
-    </script>    
+    
+        // Add logic to close the menu and scroll to "Resume & Skills" section
+        document.getElementById('resume-skills-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+    
+            // Close the menu
+            menuToggle.classList.remove('open');
+            menuWindow.classList.remove('open');
+            logoElements.forEach(el => el.classList.remove('hidden'));
+            siteHeader.classList.remove('header-transparent');
+    
+            // Scroll to the "About" section smoothly
+            document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    
     
 </body>
 </html>
