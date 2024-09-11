@@ -20,4 +20,4 @@ This portfolio is designed to present my work and skills in a clean and professi
 
 - **Dynamic Header**: Positioned to the top left with a circular logo image next to the text.
 - **Interactive Menu**: A toggle button that changes to an 'X' and reveals a menu with navigation options.
-- **Responsive Design**: Ensures the portfolio looks good on all devices.
+- **Responsive Design**: Ensures the portfolio looks good on all devices. [WORK IN PROGRESS]
