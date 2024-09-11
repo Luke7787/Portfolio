@@ -3,10 +3,10 @@ const menuToggle = document.querySelector('.menu-toggle');
 const menuWindow = document.querySelector('.menu-window');
 const logoElements = document.querySelectorAll('.logo, .logo-image');
 const siteHeader = document.querySelector('.site-header');
-const progressBar = document.getElementById('myProgressBar'); // Get the progress bar element
+const progressBar = document.getElementById('myProgressBar');
 
+// Scroll to the top of the page on load
 window.onload = function() {
-    // Scroll to the top of the page on load
     window.scrollTo(0, 0);
     
     // Remove the anchor from the URL without reloading the page
@@ -58,7 +58,8 @@ window.addEventListener('scroll', () => {
 
 // Initial check in case the page loads scrolled down
 checkHeaderVisibility();
-updateProgressBar(); // Ensure the progress bar is updated on page load
+// Ensure the progress bar is updated on page load
+updateProgressBar();
 
 const letters = "ゲネバコンヰゾケウユハポフチヘツムカザルマボレピスルベトペアドプヤブヲンタシデラソミネブニヌレクサゲガバーネゼ";
 const subtext = document.getElementById("subtext");
@@ -84,7 +85,8 @@ function scrambleText() {
         if (iteration >= finalText.length) {
             clearInterval(scrambleInterval);
         }
-    }, 55); // Interval time to control the smoothness of the effect
+    // Interval time to control the smoothness of the effect
+    }, 55);
 }
 
 // Initially hide the text completely
@@ -92,21 +94,23 @@ subtext.style.visibility = 'hidden';
 
 // Show the text after a 0.5-second delay and start the scramble effect
 setTimeout(() => {
-    subtext.style.visibility = 'visible'; // Make the text visible
-    subtext.style.opacity = '1'; // Transition to full opacity
-    scrambleText(); // Start the scramble effect
-}, 0); // 0.5 seconds delay
+    subtext.style.visibility = 'visible';
+    subtext.style.opacity = '1';
+    scrambleText();
+}, 0);
 
 // restart page when "Luke Zhuang" menu button is pressed
 document.getElementById('restart-page').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    window.location.reload(); // Reload the page
+    // Prevent the default anchor behavior
+    event.preventDefault();
+    window.location.reload();
 });
 
-// restart page when "Luke Zhuang" menu button is pressed
+// restart page when "Home" menu button is pressed
 document.getElementById('restart-home').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    window.location.reload(); // Reload the page
+    // Prevent the default anchor behavior
+    event.preventDefault(); 
+    window.location.reload();
 });
 
 // Add logic to close the menu and scroll to "Resume & Skills" section
