@@ -1,1 +1,1 @@
-# Portfolio
+The motivation behind this project was to practice and enhance my skills in HTML, CSS, and JavaScript. Additionally, I aimed to create a visually appealing and functional portfolio to stand out as an applicant and showcase my abilities as a web developer.
