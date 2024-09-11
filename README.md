@@ -16,6 +16,8 @@ This portfolio is designed to present my work and skills in a clean and professi
 
 - **Menu Window**: The menu window features a picture on the left half of the page and includes buttons for "Luke Zhuang," "Home," "Resume & Skill," and "Portfolio." It closes when the 'X' is pressed.
 
+- **Text Animation**: The portfolio includes animated text effects to enhance visual appeal. These animations are implemented using CSS animations and transitions, adding a dynamic touch to the presentation of text elements.
+
 ## Features
 
 - **Dynamic Header**: Positioned to the top left with a circular logo image next to the text.
