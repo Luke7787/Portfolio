@@ -140,3 +140,17 @@ document.querySelector('.menu-link[data-number="03"]').addEventListener('click',
     // Scroll to the "Portfolio" section smoothly
     document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' });
 });
+
+// Add logic to close the menu and scroll to "Skills" section
+document.querySelector('.menu-link[data-number="04"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+
+    // Close the menu
+    menuToggle.classList.remove('open');
+    menuWindow.classList.remove('open');
+    logoElements.forEach(el => el.classList.remove('hidden'));
+    siteHeader.classList.remove('header-transparent');
+
+    // Scroll to the "Skills" section smoothly
+    document.querySelector('.skills-intro').scrollIntoView({ behavior: 'smooth' });
+});
