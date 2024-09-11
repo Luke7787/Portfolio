@@ -21,8 +21,8 @@
             <img src="menu.jpg" alt="Menu Image">
         </div>
         <div class="menu-buttons">
-            <a href="#" class="menu-link no-bar">Luke Zhuang</a>
-            <a href="#" class="menu-link" data-number="01">Home</a>
+            <a href="#" id="restart-page" class="menu-link no-bar">Luke Zhuang</a>
+            <a href="#" id="restart-home" class="menu-link" data-number="01">Home</a>
             <a href="#" class="menu-link" data-number="02">Resume & Skills</a>
             <a href="#" class="menu-link" data-number="03">Portfolio</a>
         </div>
@@ -337,6 +337,19 @@
             subtext.style.opacity = '1'; // Transition to full opacity
             scrambleText(); // Start the scramble effect
         }, 0); // 0.5 seconds delay
+
+
+        // restart page when "Luke Zhuang" menu button is pressed
+        document.getElementById('restart-page').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        window.location.reload(); // Reload the page
+        });
+
+        // restart page when "Luke Zhuang" menu button is pressed
+        document.getElementById('restart-home').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        window.location.reload(); // Reload the page
+        });
 
     </script>    
     
