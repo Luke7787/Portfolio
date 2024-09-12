@@ -1,5 +1,7 @@
 # Luke Zhuang's Portfolio
 
+Explore my personal portfolio here: [Luke Zhuang's Portfolio](https://luke7787.github.io/Portfolio/)
+
 ## Introduction
 
 Welcome to my portfolio! This project showcases my skills in web development, focusing on HTML, CSS, and JavaScript. The motivation behind this project was to practice and enhance my skills in these technologies while creating a visually appealing and functional portfolio to stand out as an applicant and showcase my abilities as a web developer.
