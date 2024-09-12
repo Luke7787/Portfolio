@@ -1,6 +1,6 @@
 # Luke Zhuang's Portfolio
 
-Explore my personal portfolio here: [Luke Zhuang's Portfolio](https://luke7787.github.io/Portfolio/)
+# Explore My Personal Portfolio Here: [Luke Zhuang's Portfolio](https://luke7787.github.io/Portfolio/)
 
 ## Introduction
 
