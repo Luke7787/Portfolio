@@ -349,7 +349,7 @@ body {
     color: white;
     letter-spacing: 0.05em;
     font-weight: 400;
-    margin-bottom: 7.75rem;
+    margin-bottom: 7.9rem;
     margin-left: 5.75rem;
     text-transform: none;
 }
@@ -514,7 +514,7 @@ body {
 
 .social-icons {
     margin-top: 30px;
-    margin-left: 18rem;
+    margin-left: 18.25rem;
 }
 
 .social-icons a {
@@ -537,15 +537,15 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; 
-    height: 50px; 
+    width: 55px; 
+    height: 55px; 
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
     transition: background-color 0.3s ease; 
 }
 
 .icon-container i {
-    font-size: 24px; 
+    font-size: 30px; 
     color: #1B76D2; 
     transition: color 0.3s ease; 
 }
