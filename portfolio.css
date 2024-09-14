@@ -987,10 +987,11 @@ footer p {
     }
 
     .about-image {
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin: 0 0 1.5rem 0; /* Remove horizontal margins and add bottom spacing */
         display: block;
+        margin: 0 auto; 
+        margin-left: 8rem;
     }    
 
     #about-section {
@@ -1008,7 +1009,7 @@ footer p {
         font-size: 1.5rem; /* Reduces font size */
         text-align: left; /* Centers the text */
         margin: 0; /* Removes any existing margins */
-        margin-left: -15.2rem;
+        margin-left: -10.2rem;
         margin-bottom: 1.5rem;
     }
 
@@ -1016,7 +1017,7 @@ footer p {
         font-size: 1.5rem; /* Reduces font size */
         text-align: left; /* Centers the text */
         margin: 0; /* Removes any existing margins */
-        margin-left: -5.2rem;
+        margin-left: -.2rem;
     }
 
     /* 9. Optional: Enhance contact-info layout */
@@ -1027,27 +1028,27 @@ footer p {
     }
 
     .social-icons {
-        margin-left: -15rem;
+        margin-left: -10rem;
     }
 
     .resume-link {
         padding-top: 2rem;
         margin: 0;
         font-size: 1.25rem; /* Makes the font size smaller */
-        margin-left: -15.2rem;
+        margin-left: -10.2rem;
     }
 
     .subtext2 {
         margin: 0;
-        margin-left: 2.5rem;
+        margin-left: 5rem;
         margin-bottom: 10rem;
     }
 
     .about-description {
         text-transform: none;
         margin: 0;
-        margin-top: 27rem;
-        margin-left: -1.5rem;
+        margin-top: 22rem;
+        margin-left: 3.5rem;
         font-size: 1rem;
     }
  
