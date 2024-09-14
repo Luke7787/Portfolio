@@ -899,72 +899,26 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Responsive Menu Window for Small Screens */
-@media (max-width: 768px) {
-    .menu-window {
-        flex-direction: column;
-        width: 100vw;
-        height: 105vh;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .menu-image {
+/* Responsive adjustments for smaller devices*/
+@media (max-width: 768px){
+    /* Hide the menu image when the menu is open */
+    .menu-window.open .menu-image {
         display: none;
     }
 
-    .menu-buttons {
+    /* Expand the menu buttons to take full width when the menu is open */
+    .menu-window.open .menu-buttons {
         width: 100%;
-        padding: 1.5rem;
-        align-items: center;
     }
 
+    /* Optional: Adjust padding for menu buttons for better fit */
+    .menu-buttons {
+        padding: 1.5rem; /* You can adjust this value as needed */
+    }
+
+    /* Optional: Adjust font sizes for menu links for better readability */
     .menu-link {
-        font-size: 1.75rem;
-        margin: 1rem 0;
-        width: 90%;
+        font-size: 1.5rem; /* Slightly smaller font size */
+        margin: 1rem 0;     /* Adjust vertical spacing */
     }
-
-    .menu-toggle {
-        margin-right: 2rem;
-    }
-}
-
-/* Menu Toggle Button Styling */
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2rem;
-    height: 1.5rem;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: 4vw;
-    z-index: 1001;
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-toggle .bar {
-    height: 0.25rem;
-    background-color: white;
-    border-radius: 0.125rem;
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-toggle:hover .bar {
-    background-color: #1E90FF;
-}
-
-/* Menu Toggle Open State */
-.menu-toggle.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(0.41rem, 0.47rem);
-}
-
-.menu-toggle.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(0.41rem, -0.47rem);
 }
