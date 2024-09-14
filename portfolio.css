@@ -932,6 +932,19 @@ footer p {
     }
 
     .logo-image {
-        margin-left: 0rem
+        margin-left: -0.5rem;  /* Shift to the left */
     }
+
+    .logo-container {
+        margin-left: 0rem;  /* Shift to the left */
+    }
+
+    .logo-bg {
+        margin-left: 0rem;  /* Shift to the left */
+    }
+
+    .logo {
+        margin-left: 0rem;  /* Shift to the left */
+    }
+
 }
