@@ -930,4 +930,8 @@ footer p {
     .menu-link {
         font-size: 1.5rem; /* Slightly smaller font size */
     }
+
+    .logo-image {
+        margin-left: 0rem
+    }
 }
