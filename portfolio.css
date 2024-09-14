@@ -513,6 +513,7 @@ body {
 }
 
 .resume-link {
+    color: #1E90FF;
     font-size: 1.25rem;
     margin-left: 18.75rem;
     z-index: 9999;
@@ -889,6 +890,7 @@ footer p {
     font-weight: 300; 
     font-family: 'Open Sans', sans-serif; 
     white-space: nowrap; 
+    padding-bottom: 1rem;
 }
 
 .email-link {
@@ -976,5 +978,67 @@ footer p {
         padding: 0.15rem 0.3rem;    /* Smaller padding for a more compact button */
         margin-left: 0rem;
     }    
+
+    .resume-link {
+        margin: 0;
+        font-size: 1.5rem; /* Makes the font size smaller */
+        margin-left: -7rem;
+    }
+
+    .social-icons {
+        display: flex; /* Enables Flexbox */
+        justify-content: center; /* Centers icons horizontally */
+        align-items: center; /* Centers icons vertically */
+        gap: 1.5rem; /* Reduces spacing between icons */
+        margin: 2rem 0; /* Maintains vertical spacing */
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem; /* Add spacing below the image */
+        display: block;
+    }
+
+    #about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About {
+        text-align: left; /* Ensure text is centered */
+        padding: 0 1rem; /* Add horizontal padding for better readability */
+    }
+
+    .contact-text {
+        font-size: 1.5rem; /* Reduces font size */
+        text-align: left; /* Centers the text */
+        margin: 0; /* Removes any existing margins */
+        margin-left: -10rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem; /* Reduces font size */
+        text-align: left; /* Centers the text */
+        margin: 0; /* Removes any existing margins */
+    }
+
+    /* 9. Optional: Enhance contact-info layout */
+    .contact-info a {
+        display: inline-block; /* Ensures links behave correctly */
+        margin: 0 0.5rem; /* Adds horizontal spacing between links */
+        margin-bottom: 0.75rem;
+    }
+
+    .social-icons {
+
+        margin-left: -8rem;
+    }
 
 }
