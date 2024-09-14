@@ -300,6 +300,16 @@ body {
     display: none;
 }
 
+/* Custom styles for the "Luke Zhuang" menu link */
+#restart-page.menu-link.no-bar {
+    font-family: 'Work Sans', 'Segoe UI', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    /* You can add more custom styles here if desired */
+}
+
 .menu-link:hover {
     color: #1E90FF;
     transform: scale(1.025);
@@ -919,6 +929,5 @@ footer p {
     /* Optional: Adjust font sizes for menu links for better readability */
     .menu-link {
         font-size: 1.5rem; /* Slightly smaller font size */
-        margin: 1rem 0;     /* Adjust vertical spacing */
     }
 }
