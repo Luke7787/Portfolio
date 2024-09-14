@@ -967,4 +967,13 @@ footer p {
         font-size: 1rem; /* Adjust font size for better readability */
     }
 
+    footer p {
+        font-size: 0.8rem; /* Smaller font size for better fit on small screens */
+    }
+
+    .name-button {
+        font-size: 0.8rem;          /* Smaller font size */
+        padding: 0.15rem 0.3rem;    /* Smaller padding for a more compact button */
+    }    
+
 }
