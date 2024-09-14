@@ -960,13 +960,12 @@ footer p {
     }
 
     footer p {
-        font-size: 0.9rem; /* Adjust to your preference */
-        line-height: 1.4;   /* Improve readability */
+        font-size: 0.75rem; /* Adjust to your preference */
     }
 
     /* Make the .name-button smaller */
     .name-button {
-        font-size: 0.9rem;     /* Decrease font size */
+        font-size: 0.75rem;     /* Decrease font size */
         padding: 0.3rem 0.5rem; /* Decrease padding */
         border-radius: 4px;     /* Slightly smaller border radius */
     }
