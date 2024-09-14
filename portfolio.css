@@ -935,4 +935,17 @@ footer p {
         margin-left: -0.5rem;  /* Shift to the left */
     }
 
+    .subtext {
+        font-size: 1.2rem; /* Adjust to your preference */
+    }
+
+    /* Make the logo2 font smaller */
+    .logo2 {
+        font-size: 2.5rem; /* Adjust to your preference */
+    }
+
+    .container > h2 {
+        font-size: 1.5rem; /* Adjust to your preference */
+    }
+
 }
