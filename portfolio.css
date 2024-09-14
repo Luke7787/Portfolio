@@ -948,4 +948,27 @@ footer p {
         font-size: 1.15rem; /* Adjust to your preference */
     }
 
+    /* Stack the skill categories vertically */
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1.5rem; /* Adjust gap between categories if needed */
+    }
+
+    /* Optional: Adjust skill-list items for better visibility */
+    .skill-item {
+        font-size: 1rem; /* Adjust font size for better readability */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Adjust to your preference */
+        line-height: 1.4;   /* Improve readability */
+    }
+
+    /* Make the .name-button smaller */
+    .name-button {
+        font-size: 0.9rem;     /* Decrease font size */
+        padding: 0.3rem 0.5rem; /* Decrease padding */
+        border-radius: 4px;     /* Slightly smaller border radius */
+    }
+
 }
