@@ -968,6 +968,65 @@ footer p {
         font-size: 0.9rem;     /* Decrease font size slightly */
         padding: 0.2rem 0.2rem; /* Slightly decrease padding */
         border-radius: 3px;     /* Slightly smaller border radius */
-    }    
+    }
+    
+    #ending {
+        margin-top: -3rem;
+        padding: 2rem 1rem; /* Adjust padding for smaller devices */
+    }
+    
+    .ending-content {
+        text-align: center;  /* Center-align text */
+    }
+
+    .ending-content h5 {
+        font-size: 1.7rem;   /* Reduce font size */
+        margin-bottom: 1.5rem; /* Add spacing below the heading */
+    }
+
+    .ending-content p {
+        font-size: 1rem;     /* Reduce font size */
+        margin-bottom: 1.5rem; /* Add spacing below the paragraph */
+    }
+
+    .ending-icons {
+        display: flex;
+        justify-content: center; /* Center the icons */
+        gap: 1rem;               /* Space between icons */
+        flex-wrap: wrap;         /* Allow icons to wrap if necessary */
+        margin-top: 1rem;        /* Add top margin */
+    }
+
+    .ending-icon-container {
+        width: 52px;      /* Reduce size */
+        height: 52px;     /* Reduce size */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .email-link{
+        font-size: 1.7rem;
+        margin-left: -0.5rem;
+    }
+
+    .ending-icon-container i {
+        font-size: 30px;  /* Reduce icon size */
+        color: #1E90FF;   /* Maintain icon color */
+    }
+
+    /* Optional: Adjust hover effects for smaller devices */
+    .ending-icon-container:hover {
+        background-color: #1E90FF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .ending-icons a {
+        /* Ensure links are easily tappable */
+        display: inline-block;
+    }
 
 }
