@@ -15,12 +15,30 @@ window.onload = function() {
     }
 }
 
+// Functions to disable and enable scrolling with scrollbar compensation
+function disableScroll() {
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+    document.body.classList.add('no-scroll');
+}
+
+function enableScroll() {
+    document.body.style.paddingRight = '';
+    document.body.classList.remove('no-scroll');
+}
+
 // Toggle the menu open/close
 menuToggle.addEventListener('click', () => {
+    const isOpen = menuWindow.classList.toggle('open');
     menuToggle.classList.toggle('open');
-    menuWindow.classList.toggle('open');
     logoElements.forEach(el => el.classList.toggle('hidden'));
     siteHeader.classList.toggle('header-transparent');
+    
+    if (isOpen) {
+        disableScroll();
+    } else {
+        enableScroll();
+    }
 });
 
 let lastScrollY = window.scrollY;
@@ -99,29 +117,36 @@ setTimeout(() => {
     scrambleText();
 }, 0);
 
-// restart page when "Luke Zhuang" menu button is pressed
+// Function to close the menu and re-enable scrolling
+function closeMenu() {
+    menuToggle.classList.remove('open');
+    menuWindow.classList.remove('open');
+    logoElements.forEach(el => el.classList.remove('hidden'));
+    siteHeader.classList.remove('header-transparent');
+    enableScroll();
+}
+
+// Restart page when "Luke Zhuang" menu button is pressed
 document.getElementById('restart-page').addEventListener('click', function(event) {
     // Prevent the default anchor behavior
     event.preventDefault();
     window.location.reload();
+    closeMenu();
 });
 
-// restart page when "Home" menu button is pressed
+// Restart page when "Home" menu button is pressed
 document.getElementById('restart-home').addEventListener('click', function(event) {
     // Prevent the default anchor behavior
     event.preventDefault(); 
     window.location.reload();
+    closeMenu();
 });
 
 // Add logic to close the menu and scroll to "Resume & Skills" section
 document.getElementById('resume-skills-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default anchor behavior
 
-    // Close the menu
-    menuToggle.classList.remove('open');
-    menuWindow.classList.remove('open');
-    logoElements.forEach(el => el.classList.remove('hidden'));
-    siteHeader.classList.remove('header-transparent');
+    closeMenu();
 
     // Scroll to the "About" section smoothly
     document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
@@ -131,11 +156,7 @@ document.getElementById('resume-skills-link').addEventListener('click', function
 document.querySelector('.menu-link[data-number="03"]').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default anchor behavior
 
-    // Close the menu
-    menuToggle.classList.remove('open');
-    menuWindow.classList.remove('open');
-    logoElements.forEach(el => el.classList.remove('hidden'));
-    siteHeader.classList.remove('header-transparent');
+    closeMenu();
 
     // Scroll to the "Portfolio" section smoothly
     document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' });
@@ -145,11 +166,7 @@ document.querySelector('.menu-link[data-number="03"]').addEventListener('click',
 document.querySelector('.menu-link[data-number="04"]').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default anchor behavior
 
-    // Close the menu
-    menuToggle.classList.remove('open');
-    menuWindow.classList.remove('open');
-    logoElements.forEach(el => el.classList.remove('hidden'));
-    siteHeader.classList.remove('header-transparent');
+    closeMenu();
 
     // Scroll to the "Skills" section smoothly
     document.querySelector('.skills-intro').scrollIntoView({ behavior: 'smooth' });

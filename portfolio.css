@@ -209,6 +209,11 @@ body {
     transform: rotate(-45deg) translate(0.41rem, -0.47rem);
 }
 
+/* Disable scrolling when menu is open */
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Menu Window Styling */
 .menu-window {
     position: fixed;
@@ -892,4 +897,74 @@ footer p {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
     color: white; 
     transform: scale(1.05);
+}
+
+/* Responsive Menu Window for Small Screens */
+@media (max-width: 768px) {
+    .menu-window {
+        flex-direction: column;
+        width: 100vw;
+        height: 105vh;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .menu-image {
+        display: none;
+    }
+
+    .menu-buttons {
+        width: 100%;
+        padding: 1.5rem;
+        align-items: center;
+    }
+
+    .menu-link {
+        font-size: 1.75rem;
+        margin: 1rem 0;
+        width: 90%;
+    }
+
+    .menu-toggle {
+        margin-right: 2rem;
+    }
+}
+
+/* Menu Toggle Button Styling */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 4vw;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle .bar {
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 0.125rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .bar {
+    background-color: #1E90FF;
+}
+
+/* Menu Toggle Open State */
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(0.41rem, 0.47rem);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(0.41rem, -0.47rem);
 }
