@@ -269,7 +269,7 @@ body {
     text-align: center; 
     transition: color 0.3s;
     position: relative;
-    padding-left: 2.5rem;
+    padding-left: 0.75rem;
 }
 
 /* Pseudo-element for Subscript Numbers */
