@@ -830,8 +830,13 @@ h2 {
 }
 
 .ending-icons {
-    margin: 2rem 0; 
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 0.5rem; /* Adds consistent spacing between icons */
+    margin: 2rem 0; /* Maintains existing vertical spacing */
 }
+
 
 .ending-icons a {
     margin: 0 1rem; 
@@ -875,7 +880,6 @@ footer {
     align-items: center; 
     width: 100%; 
     padding: 1rem 0; 
-    background-color: #333;
 }
 
 footer p {
