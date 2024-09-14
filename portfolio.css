@@ -968,12 +968,13 @@ footer p {
     }
 
     footer p {
-        font-size: 0.8rem; /* Smaller font size for better fit on small screens */
+        font-size: 0.6rem; /* Smaller font size for better fit on small screens */
     }
 
     .name-button {
-        font-size: 0.8rem;          /* Smaller font size */
+        font-size: 0.6rem;          /* Smaller font size */
         padding: 0.15rem 0.3rem;    /* Smaller padding for a more compact button */
+        margin-left: 0rem;
     }    
 
 }
