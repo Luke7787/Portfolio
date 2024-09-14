@@ -350,11 +350,6 @@ body {
     position: relative;
 }
 
-.about-text .subtext2 {
-    margin-bottom: 11.5rem;
-    margin-left: 5.75rem;
-}
-
 /* Subtext Styling */
 .subtext2{
     bottom: 0;
@@ -364,15 +359,15 @@ body {
     color: white;
     letter-spacing: 0.05em;
     font-weight: 400;
-    margin-bottom: 7.9rem;
-    margin-left: 5.75rem;
+    margin-bottom: 11.75rem;
+    margin-left: 37.5rem;
     text-transform: none;
 }
 
 .about-description {
     margin-top: -2.75rem; 
     font-size: 1.2rem;
-    margin-left: 5.75rem;
+    margin-left: 37.72rem;
     color: #8c8c8c;
     text-align: left;
     font-weight: 400;
@@ -979,17 +974,11 @@ footer p {
         margin-left: 0rem;
     }    
 
-    .resume-link {
-        margin: 0;
-        font-size: 1.5rem; /* Makes the font size smaller */
-        margin-left: -7rem;
-    }
-
     .social-icons {
         display: flex; /* Enables Flexbox */
         justify-content: center; /* Centers icons horizontally */
         align-items: center; /* Centers icons vertically */
-        gap: 1.5rem; /* Reduces spacing between icons */
+        gap: 0.5rem; /* Reduces spacing between icons */
         margin: 2rem 0; /* Maintains vertical spacing */
     }
 
@@ -1000,9 +989,9 @@ footer p {
     .about-image {
         width: 100%;
         height: auto;
-        margin-bottom: 1.5rem; /* Add spacing below the image */
+        margin: 0 0 1.5rem 0; /* Remove horizontal margins and add bottom spacing */
         display: block;
-    }
+    }    
 
     #about-section {
         display: flex;
@@ -1019,7 +1008,7 @@ footer p {
         font-size: 1.5rem; /* Reduces font size */
         text-align: left; /* Centers the text */
         margin: 0; /* Removes any existing margins */
-        margin-left: -10rem;
+        margin-left: -15.2rem;
         margin-bottom: 1.5rem;
     }
 
@@ -1027,6 +1016,7 @@ footer p {
         font-size: 1.5rem; /* Reduces font size */
         text-align: left; /* Centers the text */
         margin: 0; /* Removes any existing margins */
+        margin-left: -5.2rem;
     }
 
     /* 9. Optional: Enhance contact-info layout */
@@ -1037,8 +1027,28 @@ footer p {
     }
 
     .social-icons {
-
-        margin-left: -8rem;
+        margin-left: -15rem;
     }
 
+    .resume-link {
+        padding-top: 2rem;
+        margin: 0;
+        font-size: 1.25rem; /* Makes the font size smaller */
+        margin-left: -15.2rem;
+    }
+
+    .subtext2 {
+        margin: 0;
+        margin-left: 2.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-description {
+        text-transform: none;
+        margin: 0;
+        margin-top: 27rem;
+        margin-left: -1.5rem;
+        font-size: 1rem;
+    }
+ 
 }
