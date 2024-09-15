@@ -970,6 +970,7 @@ footer p {
 
     footer p {
         font-size: 0.7rem; /* Smaller font size for better fit on small screens */
+        padding-bottom: 2rem;
     }
 
     .name-button {
