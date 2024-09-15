@@ -1070,7 +1070,7 @@ footer p {
 
     .about-project img{
         max-width: 22.25rem;
-        margin-left: -1.2rem;
+        margin-left: -1.25rem;
     }
 
     .project-subtext{
@@ -1110,6 +1110,15 @@ footer p {
         align-items: center; /* Center align items horizontally */
         padding: 1rem; /* Reduce padding for smaller screens */
         margin-left: 5.5rem;
+    }
+
+    .project-container-third .project-description{
+        max-width: 73%;
+        font-size: 0.88rem;
+    }
+
+    .project-container-third .about-project img{
+        margin-left: 0.25rem;
     }
  
 }
