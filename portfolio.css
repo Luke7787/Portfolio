@@ -436,6 +436,10 @@ body {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.project-container2 .project-description{
+    max-width: 90%;
+}
+
 .about-project img {
     max-width: 26rem; 
     height: 28rem; 
