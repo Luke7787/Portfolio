@@ -4,6 +4,8 @@
 
 Welcome to my portfolio! This project showcases my skills in web development, focusing on HTML, CSS, and JavaScript. The motivation behind this project was to practice and enhance my skills in these technologies while creating a visually appealing and functional portfolio to stand out as an applicant and showcase my abilities as a web developer.
 
+This portfolio represents an earlier version of my personal website. A newer version can be found here: https://lukezhuang.onrender.com
+
 ## Project Overview
 
 This portfolio is designed to present my work and skills in a clean and professional manner. It includes the following features:
